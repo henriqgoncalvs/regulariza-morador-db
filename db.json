@@ -1,16 +1,3628 @@
 {
-  "posts":[
-    {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+  "me": {
+    "name": "Henrique",
+    "role": "Admin",
+    "cpf": "123.456.789-10",
+    "phone": "(87) 9 88254611",
+    "stamp": "142932",
+    "residentFormData": {
+      "currentQuestion": [],
+      "answered": false
     }
-  ],
-  "comments" : [
+  },
+  "answers": [],
+  "questions": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "isFirst": true,
+      "isLast": false,
+      "id": 1,
+      "required": true,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você é proprietária ou proprietário do imóvel que vamos regularizar?",
+      "diagonalLabel": "Proprietário do imóvel:",
+      "description": "Escolha uma das opções",
+      "slug": "proprietario-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "proprietario-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "paga-aluguel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 2,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você mora neste imóvel que iremos regularizar?",
+      "diagonalLabel": "Morador do imóvel:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "composicao-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "servico-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 3,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você paga aluguel??",
+      "diagonalLabel": "Paga aluguel:",
+      "description": "Escolha uma das opções",
+      "slug": "paga-aluguel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "paga-aluguel",
+              "content": "Sim"
+            }
+          ],
+          "next": "moradia-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "paga-aluguel",
+              "content": "Não"
+            }
+          ],
+          "next": "emprestado-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 4,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "O proprietário ou proprietária emprestou o imóvel para você?",
+      "diagonalLabel": "Imóvel emprestado:",
+      "description": "Escolha uma das opções",
+      "slug": "emprestado-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "emprestado-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "moradia-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "emprestado-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "comprou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 5,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "O imóvel que vamos regularizar é uma casa utilizada para moradia?",
+      "diagonalLabel": "Imóvel é moradia:",
+      "description": "Escolha uma das opções",
+      "slug": "moradia-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "moradia-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "composicao-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "moradia-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "servico-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 6,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "No imóvel funciona alguma fábrica, comércio ou algum tipo de serviço??",
+      "diagonalLabel": "Comércio/fábrica/serviço no imóvel:",
+      "description": "Escolha uma das opções",
+      "slug": "servico-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "servico-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "tipo-servico-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "servico-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "cultura-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 7,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "O imóvel é feito de:",
+      "diagonalLabel": "Composição imóvel:",
+      "description": "Escolha várias opções",
+      "slug": "composicao-imovel",
+      "alternatives": [
+        "Tijolo/bloco de cimento",
+        "Madeira",
+        "Restos de material"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "andar-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 8,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você herdou de algum parente?",
+      "diagonalLabel": "Imóvel herdado:",
+      "description": "Escolha uma opção apenas",
+      "slug": "herdou-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "herdou-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "unico-herdeiro"
+        },
+        {
+          "expression": [
+            {
+              "slug": "herdou-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "doacao-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 9,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Escolha a opção abaixo para nos dizer o que funciona no imóvel:",
+      "diagonalLabel": "Serviço do imóvel:",
+      "description": "Escolha várias opções",
+      "slug": "tipo-servico-imovel",
+      "alternatives": [
+        "Uma fábrica",
+        "Um comércio",
+        "Um serviço"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "dono-negocio-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 10,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Tem mais de um andar o imóvel?",
+      "diagonalLabel": "Imóvel com vários andares:",
+      "description": "Escolha uma opção",
+      "slug": "andar-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "andar-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "quantidade-andares-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "andar-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "quantidade-comodos-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 11,
+      "required": false,
+      "category": "residence",
+      "type": "number",
+      "topicIcons": "residence",
+      "residentLabel": "Quantos?",
+      "diagonalLabel": "Quantidade andares imóvel:",
+      "description": "Digite um número",
+      "slug": "quantidade-andares-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "quantidade-comodos-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 12,
+      "required": false,
+      "category": "residence",
+      "type": "number",
+      "topicIcons": "residence",
+      "residentLabel": "Digite a quantidade de cômodos do imóvel. Conte apenas os quartos, sala, cozinha e banheiro.",
+      "diagonalLabel": "Quantidade cômodos imóvel:",
+      "description": "Digite um número",
+      "slug": "quantidade-comodos-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "moradia-e-comercio-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 13,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Além de servir como moradia, também funciona alguma fábrica, comércio ou serviço no imóvel?",
+      "diagonalLabel": "Imóvel como moradia e serviços",
+      "description": "Escolha uma opção",
+      "slug": "moradia-e-comercio-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "moradia-e-comercio-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "tipo-servico-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "moradia-e-comercio-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "comprou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 14,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "No imóvel funciona alguma Igreja, Associação de Moradores ou Organização Cultural?",
+      "diagonalLabel": "Imóvel functiona igreja/algo cultural",
+      "description": "Escolha uma opção",
+      "slug": "cultura-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "cultura-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "responsavel-organizacao-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "cultura-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "terreno-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 15,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "É um terreno?",
+      "diagonalLabel": "É um terreno",
+      "description": "Escolha uma opção",
+      "slug": "terreno-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "terreno-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "terreno-vazio-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "terreno-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "descricao-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 16,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "O terreno está vazio?",
+      "diagonalLabel": "Terreno vazio",
+      "description": "Escolha uma opção",
+      "slug": "terreno-vazio-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "terreno-vazio-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "comprou-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "terreno-vazio-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "construindo-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 17,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Diga para gente o que é seu imóvel:",
+      "diagonalLabel": "Descrição imóvel",
+      "description": "Descreva seu imóvel",
+      "slug": "descricao-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "composicao-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 18,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você está construíndo algo neste terreno?",
+      "diagonalLabel": "Construindo no terreno",
+      "description": "Digite sua resposta",
+      "slug": "construindo-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "construindo-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "composicao-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "construindo-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "descricao-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 19,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você é responsável por ela?",
+      "diagonalLabel": "Responsável organização",
+      "description": "Escolha uma resposta",
+      "slug": "responsavel-organizacao-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "responsavel-organizacao-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "possui-cnpj-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "responsavel-organizacao-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "comprou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 19,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Possui CNPJ?",
+      "diagonalLabel": "Possui CPNJ organização",
+      "description": "Escolha uma resposta",
+      "slug": "possui-cnpj-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "possui-cnpj-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "cnpj-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "possui-cnpj-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "comprou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 20,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Digite o número do seu CNPJ",
+      "diagonalLabel": "CNPJ",
+      "description": "Digite o número do RG",
+      "slug": "cnpj-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "comprou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 21,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você é o dono ou dona do negócio?",
+      "diagonalLabel": "Dono negócio imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "dono-negocio-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dono-negocio-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "possui-cnpj-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dono-negocio-imovel",
+              "content": "Não"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "comprou-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dono-negocio-imovel",
+              "content": "Não"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-nome"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 22,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você comprou o imóvel que vamos regularizar?",
+      "diagonalLabel": "Comprou imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "comprou-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "comprou-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "data-compra-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "comprou-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "herdou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 23,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você é o único ou única herdeira?",
+      "diagonalLabel": "Único herdeira(o):",
+      "description": "Escolha uma opção",
+      "slug": "unico-herdeiro",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "unico-herdeiro",
+              "content": "Sim"
+            }
+          ],
+          "next": "ano-adquiriu-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "unico-herdeiro",
+              "content": "Não"
+            }
+          ],
+          "next": "numero-herdeiros"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 24,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "O imóvel foi uma doação?",
+      "diagonalLabel": "Doação imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "doacao-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "doacao-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "ano-adquiriu-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "doacao-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "autorizacao-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 25,
+      "required": false,
+      "category": "residence",
+      "type": "number",
+      "topicIcons": "residence",
+      "residentLabel": "Digite o número total de herdeiros:",
+      "diagonalLabel": "Número Herdeiros:",
+      "description": "Digite o número",
+      "slug": "numero-herdeiros",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "ano-adquiriu-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 26,
+      "required": false,
+      "category": "residence",
+      "type": "number",
+      "topicIcons": "residence",
+      "residentLabel": "Em que ano o imóvel passou a ser seu?",
+      "diagonalLabel": "Ano que adquiriu imóvel:",
+      "description": "Digite o número",
+      "slug": "ano-adquiriu-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "documento-prova-ano-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 27,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você tem alguma autorização da Prefeitura, Governo do Estado ou Governo Federal para usar esse imóvel?",
+      "diagonalLabel": "Autorização uso do imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "autorizacao-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "autorizacao-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "ano-adquiriu-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "autorizacao-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "trocou-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 28,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você trocou esse imóvel com alguém?",
+      "diagonalLabel": "Trocou imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "trocou-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "trocou-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "ano-adquiriu-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "trocou-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "posse-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 29,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você tem a posse do imóvel que vamo regularizar? Responda sim se você ocupou o terreno e construiu seu imóvel",
+      "diagonalLabel": "Posse imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "posse-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "posse-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "ano-adquiriu-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "posse-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "usucapiao-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 30,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você adquiriu o imóvel por usucapião?",
+      "diagonalLabel": "Usucapião imóvel:",
+      "description": "Escolha uma opção",
+      "slug": "usucapiao-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "ano-adquiriu-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 31,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Digite a data da compra",
+      "diagonalLabel": "Data compra imóvel:",
+      "description": "Digite a data da compra",
+      "slug": "data-compra-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "foi-em-reais-compra"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 32,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Na época em que você pagou pelo imóvel, o valor foi em reais (R$)?",
+      "diagonalLabel": "Valor foi em reais:",
+      "description": "Escolha uma opção",
+      "slug": "foi-em-reais-compra",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "foi-em-reais-compra",
+              "content": "Sim"
+            }
+          ],
+          "next": "valor-compra-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "foi-em-reais-compra",
+              "content": "Não"
+            }
+          ],
+          "next": "moeda-compra-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 33,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Qual era a moeda utilizada na época?",
+      "diagonalLabel": "Moeda compra:",
+      "description": "Digite a moeda",
+      "slug": "moeda-compra-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "valor-compra-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 34,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Digite o valor",
+      "diagonalLabel": "Valor compra:",
+      "description": "Digite o valor",
+      "slug": "valor-compra-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "valor-atual-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 35,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Quanto vale o seu imóvel, hoje?",
+      "diagonalLabel": "Valor imóvel:",
+      "description": "Digite o valor",
+      "slug": "valor-atual-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "ano-adquiriu-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 36,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Você tem algum documento como prova?",
+      "diagonalLabel": "Tem documento prova:",
+      "description": "Escolha uma opção",
+      "slug": "documento-prova-ano-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "documento-prova-ano-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "tipos-documento-prova-ano-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "documento-prova-ano-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "documento-prova-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 37,
+      "required": false,
+      "category": "residence",
+      "type": "checkbox",
+      "topicIcons": "residence",
+      "residentLabel": "Você possui algum destes documentos abaixo:",
+      "diagonalLabel": "Documentos imóvel:",
+      "description": "Escolha várias opções",
+      "slug": "documento-prova-imovel",
+      "alternatives": [
+        "Comprovante de residência",
+        "IPTU"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "registrado-cartorio-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 38,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Marque na lista abaixo o documento que você tem como prova:",
+      "diagonalLabel": "Documentos prova de ano imóvel:",
+      "description": "Escolha várias opções",
+      "slug": "tipos-documento-prova-ano-imovel",
+      "alternatives": [
+        "Não tenho mais nenhum documento como prova",
+        "Recibo",
+        "Contrato de Compra",
+        "Escritura",
+        "Inventário",
+        "Matrícula",
+        "Documento de doação",
+        "Cessão de posse",
+        "Título de permissão de uso ou posse",
+        "Declaração de posse",
+        "Compromisso de compra e venda",
+        "Processo de usocapião",
+        "Outro"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "tipos-documento-prova-ano-imovel",
+              "content": "Não tenho mais nenhum documento como prova"
+            }
+          ],
+          "next": "documento-prova-imovel"
+        },
+        {
+          "expression": [],
+          "next": "upload-documento-prova-ano-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 39,
+      "required": false,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Este imóvel já foi registrado no Cartório de Registro de Imóveis?",
+      "diagonalLabel": "Imóvel Registrado Cartório:",
+      "description": "Escolha uma opção",
+      "slug": "registrado-cartorio-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "registrado-cartorio-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "numero-matricula-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "registrado-cartorio-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-nome"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 40,
+      "required": false,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Digite o número da matrícula",
+      "diagonalLabel": "Número matrícula imóvel:",
+      "description": "Digite o número",
+      "slug": "numero-matricula-imovel",
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-nome"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 41,
+      "required": false,
+      "category": "residence",
+      "type": "file",
+      "topicIcons": "residence",
+      "residentLabel": "Faça o upload desse documento:",
+      "diagonalLabel": "Documento prova de ano imóvel:",
+      "description": "Upload do documento",
+      "slug": "upload-documento-prova-ano-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "tipos-documento-prova-ano-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 101,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Digite seu nome completo.",
+      "diagonalLabel": "Nome completo:",
+      "description": "Responda abaixo",
+      "slug": "morador-nome",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "endereco-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 102,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "location",
+      "residentLabel": "Informe o endereço do imóvel que será regularizado.",
+      "diagonalLabel": "Endereço do imóvel:",
+      "description": "Responda abaixo",
+      "slug": "endereco-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-genero"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 103,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Informe seu gênero.",
+      "diagonalLabel": "Gênero:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-genero",
+      "alternatives": [
+        "Masculino",
+        "Feminino"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-nascimento"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 104,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Digite sua data de nascimento.",
+      "diagonalLabel": "Data de nascimento:",
+      "description": "Responda abaixo",
+      "slug": "morador-nascimento",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-pais"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 105,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "location",
+      "residentLabel": "Em qual país você nasceu?",
+      "diagonalLabel": "Nacionalidade:",
+      "description": "Responda abaixo",
+      "slug": "morador-pais",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-estado"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 106,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "location",
+      "residentLabel": "Em qual estado você nasceu?",
+      "diagonalLabel": "Naturalidade:",
+      "description": "Responda abaixo",
+      "slug": "morador-estado",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-deficiencia"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 107,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Vvocê possui alguma deficiência?",
+      "diagonalLabel": "Possui deficiência:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-deficiencia",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-deficiencia",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-tipo-deficiencia"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-deficiencia",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-trabalha"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 108,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Informe o tipo.",
+      "diagonalLabel": "Deficiência:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-tipo-deficiencia",
+      "alternatives": [
+        "Visual",
+        "Auditiva",
+        "Fala",
+        "Física motora não cadeirante",
+        "Física motora cadeirante",
+        "Mental",
+        "Síndrome de down",
+        "LER/DORF",
+        "Autismo",
+        "Múltipla",
+        "Outra"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-trabalha"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 109,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você trabalha atualmente?",
+      "diagonalLabel": "Trabalha atualmente:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-trabalha",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-trabalha",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-funcionario-publico"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-trabalha",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-aposentado-pensionista"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 110,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você é aposentado ou pensionista?",
+      "diagonalLabel": "Morador aposentado ou pensionista:",
+      "description": "EScolha uma das opções",
+      "slug": "morador-aposentado-pensionista",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-aposentado-pensionista",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-aposentado-pensionista",
+              "content": "Não"
+            }
+          ],
+          "next": "proprietario-doente-invalido"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 111,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "O proprietário ou proprietária é doente ou inválido(a)?",
+      "diagonalLabel": "Proprietário(a) doente ou inválido(a):",
+      "description": "Escolha uma das opções",
+      "slug": "proprietario-doente-invalido",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "proprietario-doente-invalido",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "proprietario-doente-invalido",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-procurando-emprego"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 112,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Está procurando emprego?",
+      "diagonalLabel": "Morador procurando emprego:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-procurando-emprego",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-procurando-emprego",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-procurando-emprego",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-estudante"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 113,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você é estudante?",
+      "diagonalLabel": "Morador é estudante:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-estudante",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-estudante",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-estudante",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-cuida-de-casa"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 114,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você trabalha cuidando do lar?",
+      "diagonalLabel": "Morador cuida do próprio lar",
+      "description": "Escolha uma das opções",
+      "slug": "morador-cuida-de-casa",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-renda-mensal"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 115,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você é funcionário(a) público(a)?",
+      "diagonalLabel": "Morador é funcionário público:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-funcionario-publico",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-funcionario-publico",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-profissao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-funcionario-publico",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-carteira-assinada"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 116,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você trabalha com carteira assinada?",
+      "diagonalLabel": "Morador trabalha com carteira assinada",
+      "description": "Escolha uma das opções",
+      "slug": "morador-carteira-assinada",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-carteira-assinada",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-profissao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-carteira-assinada",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-autonomo"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 117,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você é autônomo(a)?",
+      "diagonalLabel": "Morador trabalha de forma autônoma:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-autonomo",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-autonomo",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-profissao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-autonomo",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-empresario"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 118,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você é empresário(a)?",
+      "diagonalLabel": "Morador é empresário:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-empresario",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-profissao"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 119,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Qual sua profissão?",
+      "diagonalLabel": "Profissão do morador:",
+      "description": "Responda abaixo",
+      "slug": "morador-profissao",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-local-trabalho"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 120,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "location",
+      "residentLabel": "Qual seu local de trabalho?",
+      "diagonalLabel": "Local de trabalho do morador:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-local-trabalho",
+      "alternatives": [
+        "Na residência",
+        "No bairro",
+        "No município",
+        "Outra cidade",
+        "Sem local fixo"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-renda-mensal"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 121,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "money",
+      "residentLabel": "Gostaria de informar o valor de sua renda mensal?",
+      "diagonalLabel": "Morador informou renda mensal:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-informou-renda",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-informou-renda",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-informou-renda",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-alfabetizado"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 128,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "number",
+      "topicIcons": "money",
+      "residentLabel": "Informe o valor de sua renda mensal.",
+      "diagonalLabel": "Renda mensal do morador:",
+      "description": "Responda abaixo",
+      "slug": "morador-renda-mensal",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-alfabetizado"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 122,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Sabe ler ou escrever?",
+      "diagonalLabel": "Morador sabe ler ou escrever:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-alfabetizado",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-alfabetizado",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-graduado"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-alfabetizado",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-estuda-atualmente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 123,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Tem curso superior completo?",
+      "diagonalLabel": "Morador concluiu curso superior:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-graduado",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-graduado",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-estuda-atualmente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-graduado",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-completou-ensino-medio"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 124,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Concluiu o Ensino Médio?",
+      "diagonalLabel": "Morador concluiu o Ensino Médio:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-completou-ensino-medio",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-completou-ensino-medio",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-estuda-atualmente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-completou-ensino-medio",
+              "content": "Não"
+            }
+          ],
+          "next": "morador-concluiu-ensino-fundamental"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 125,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Concluiu o Ensino Fundamental?",
+      "diagonalLabel": "Morador concluiu o Ensino Fundamental:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-concluiu-ensino-fundamental",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-estuda-atualmente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 126,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Está estudando atualmente?",
+      "diagonalLabel": "Morador estuda atualmente:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-estuda-atualmente",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-estuda-atualmente",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-local-instituicao-de-estudo"
+        },
+        {
+          "expression": [
+            {
+              "slug": "morador-estuda-atualmente",
+              "content": "Não"
+            }
+          ],
+          "next": "resident-rg"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 127,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "location",
+      "residentLabel": "Onde fica o estabelecimento de ensino?",
+      "diagonalLabel": "Local da instituição de ensino do morador:",
+      "description": "Escolha uma das opções",
+      "slug": "morador-local-instituicao-de-estudo",
+      "alternatives": [
+        "No bairro",
+        "Outro bairro",
+        "Outra cidade",
+        "Não sabe informar"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "resident-rg"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 300,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Número do RG:",
+      "diagonalLabel": "Número do RG:",
+      "description": "Digite o número do documento de RG (somente o número)",
+      "slug": "resident-rg",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "orgao-emissor-rg"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 301,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Órgão emissor:",
+      "diagonalLabel": "Órgão emissor:",
+      "description": "Digite o órgão emissor do documento",
+      "slug": "orgao-emissor-rg",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "nome-mae-resident"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 302,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Nome da mãe (Se não consta o nome no RG, escrever 'Não consta'):",
+      "diagonalLabel": "Nome da mãe:",
+      "description": "",
+      "slug": "nome-mae-resident",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "nome-pai-resident"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 303,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Nome do pai (Se não consta o nome no RG, escrever 'Não consta'):",
+      "diagonalLabel": "Nome do pai:",
+      "description": "",
+      "slug": "nome-pai-resident",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "resident-cpf"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 304,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Número do CPF:",
+      "diagonalLabel": "Número do CPF:",
+      "description": "Digite o número do documento de CPF (somente o números)",
+      "slug": "resident-cpf",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "foto-resident-rg-frente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 305,
+      "required": false,
+      "category": "documents",
+      "type": "file",
+      "topicIcons": "file",
+      "residentLabel": "Foto do RG (frente):",
+      "diagonalLabel": "Foto do RG (frente):",
+      "description": "Anexe uma foto da parte frontal do documento de RG",
+      "slug": "foto-resident-rg-frente",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "foto-resident-rg-verso"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 306,
+      "required": false,
+      "category": "documents",
+      "type": "file",
+      "topicIcons": "file",
+      "residentLabel": "Foto do RG (verso):",
+      "diagonalLabel": "Foto do RG (verso):",
+      "description": "Anexe uma foto do verso do documento de RG",
+      "slug": "foto-resident-rg-verso",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "foto-resident-cpf"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 307,
+      "required": false,
+      "category": "documents",
+      "type": "file",
+      "topicIcons": "file",
+      "residentLabel": "Foto do CPF:",
+      "diagonalLabel": "Foto do CPF:",
+      "description": "Anexe uma foto do documento de CPF",
+      "slug": "foto-resident-cpf",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "estado-civil-resident"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 308,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Estado civil:",
+      "diagonalLabel": "Estado civil:",
+      "description": "Escolha uma das opções:",
+      "slug": "estado-civil-resident",
+      "alternatives": [
+        "Solteiro(a)",
+        "Casado(a)",
+        "Divorciado(a)",
+        "Viúvo(a)",
+        "Desquitado(a)",
+        "Separado(a) judicialmente"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "estado-civil-resident",
+              "content": "Casado(a)"
+            }
+          ],
+          "next": "data-casamento"
+        },
+        {
+          "expression": [],
+          "next": "estado-real-resident"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 309,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Data do casamento:",
+      "diagonalLabel": "Data do casamento:",
+      "description": "Digite a data do casamento",
+      "slug": "data-casamento",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "regime-casamento-resident"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 310,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Regime do casamento:",
+      "diagonalLabel": "Regime do casamento:",
+      "description": "Escolha o tipo de regime do casamento",
+      "slug": "regime-casamento-resident",
+      "alternatives": [
+        "Comunhão parcial de bens",
+        "Comunhão universal de bens",
+        "Separação de bens",
+        "Participação final nos Aquestos",
+        "Outro"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "estado-real-resident"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 311,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Estado de fato:",
+      "diagonalLabel": "Estado de fato:",
+      "description": "Escolha uma das opções:",
+      "slug": "estado-real-resident",
+      "alternatives": [
+        "Não é o caso",
+        "União estável com escritura",
+        "União estável sem escritura"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "foto-estado-civil"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 312,
+      "required": false,
+      "category": "documents",
+      "type": "file",
+      "topicIcons": "file",
+      "residentLabel": "Foto de certidão do estado civil:",
+      "diagonalLabel": "Foto de certidão do estado civil:",
+      "description": "Anexar o documento de certidão civil, caso solteiro(a) anexar a certidão de nascimento:",
+      "slug": "foto-estado-civil",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "possui-outro-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 313,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você possui outro imóvel?",
+      "diagonalLabel": "Residente possui outro imóvel:",
+      "description": "Escolha uma das opções:",
+      "slug": "possui-outro-imovel",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "possui-outro-imovel",
+              "content": "Sim"
+            }
+          ],
+          "next": "imovel-possui-matricula"
+        },
+        {
+          "expression": [
+            {
+              "slug": "possui-outro-imovel",
+              "content": "Não"
+            }
+          ],
+          "next": "declaracao-situacao-habitacional"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 314,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Este imóvel possui matrícula?",
+      "diagonalLabel": "Imóvel possui matrícula:",
+      "description": "Escolha uma das opções:",
+      "slug": "imovel-possui-matricula",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "imovel-possui-matricula",
+              "content": "Sim"
+            }
+          ],
+          "next": "numero-matricula-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "imovel-possui-matricula",
+              "content": "Não"
+            }
+          ],
+          "next": "declaracao-situacao-habitacional"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 315,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Informe o número da matrícula:",
+      "diagonalLabel": "Número da matrícula:",
+      "description": "Digite o número da matrícula (somente números):",
+      "slug": "numero-matricula-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "cartorio-registro-imovel"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 316,
+      "required": false,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Qual o cartório do registro?",
+      "diagonalLabel": "Cartório do registro:",
+      "description": "Informe o cartório do registro:",
+      "slug": "cartorio-registro-imovel",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "declaracao-situacao-habitacional"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 317,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Já foi atendido por algum programa habitacional?",
+      "diagonalLabel": "Atendido por algum programa habitacional:",
+      "description": "Escolha uma das opções:",
+      "slug": "declaracao-situacao-habitacional",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "declaracao-renda-familiar"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 318,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Sua renda familiar é inferior a 05 salários mínimos?",
+      "diagonalLabel": "Renda inferior a 05 salários mínimos:",
+      "description": "Escolha uma das opções:",
+      "slug": "declaracao-renda-familiar",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "declaracao-outros-imoveis"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 319,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Você possui outro imóvel?",
+      "diagonalLabel": "Possui outro imóvel:",
+      "description": "Escolha uma das opções:",
+      "slug": "declaracao-outros-imoveis",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "outros-proprietarios"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 320,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Além de você, existe outro proprietário(a)?",
+      "diagonalLabel": "Existem outros proprietários:",
+      "description": "Escolha uma das opções:",
+      "slug": "outros-proprietarios",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "outros-proprietarios",
+              "content": "Sim"
+            }
+          ],
+          "next": "morador-nome"
+        },
+        {
+          "expression": [
+            {
+              "slug": "outros-proprietarios",
+              "content": "Não"
+            }
+          ],
+          "next": "existem-outros-moradores"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 321,
+      "required": false,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Existem outros moradores no imóvel?",
+      "diagonalLabel": "Existem outros moradores:",
+      "description": "Escolha uma das opções:",
+      "slug": "existem-outros-moradores",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "existem-outros-moradores",
+              "content": "Sim"
+            }
+          ],
+          "next": "nome-completo-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "existem-outros-moradores",
+              "content": "Não"
+            }
+          ],
+          "next": "fim-da-pesquisa"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 400,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "family",
+      "residentLabel": "Digite o nome completo:",
+      "diagonalLabel": "Nome completo do dependente:",
+      "description": "Escolha uma das opções",
+      "slug": "nome-completo-dependente",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "posicao-familia"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 401,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Qual a posição deste morador na família?",
+      "diagonalLabel": "Posição na família:",
+      "description": "Escolha uma das opções",
+      "slug": "posicao-familia",
+      "alternatives": [
+        "Chefe",
+        "Cônjuge",
+        "Filho(a) / Enteado(a)",
+        "Neto(a)",
+        "Pai / mãe",
+        "Sogro(a)",
+        "Irmão(ã)",
+        "Outro parente",
+        "Avô (ó)",
+        "Outro",
+        "Não parente"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "posicao-familia",
+              "content": "Outro"
+            }
+          ],
+          "next": "posicao-familia-preenchida"
+        },
+        {
+          "expression": [],
+          "next": "genero-dependente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 402,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "family",
+      "residentLabel": "Preencha a posição que este morador ocupa em sua família:",
+      "diagonalLabel": "Posição na família (outro):",
+      "description": "Preencha sua posição:",
+      "slug": "posicao-familia-preenchida",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "genero-dependente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 403,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Gênero:",
+      "diagonalLabel": "Gênero:",
+      "description": "Escolha uma das opções",
+      "slug": "genero-dependente",
+      "alternatives": [
+        "Masculino",
+        "Feminino"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "data-nascimento-dependente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 404,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "family",
+      "residentLabel": "Digite a data de nascimento:",
+      "diagonalLabel": "Data de nascimento:",
+      "description": "",
+      "slug": "data-nascimento-dependente",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "estado-civil-depentente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 4040,
+      "required": false,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Estado civil:",
+      "diagonalLabel": "Estado civil:",
+      "description": "Escolha uma das opções:",
+      "slug": "estado-civil-depentente",
+      "alternatives": [
+        "Solteiro(a)",
+        "Casado(a)",
+        "Divorciado(a)",
+        "Viúvo(a)",
+        "Desquitado(a)",
+        "Separado(a) judicialmente"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "estado-fato-depentente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 4041,
+      "required": false,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Estado de fato:",
+      "diagonalLabel": "Estado de fato:",
+      "description": "Escolha uma das opções:",
+      "slug": "estado-fato-depentente",
+      "alternatives": [
+        "Não é o caso",
+        "União estável com escritura",
+        "União estável sem escritura"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "dependente-possui-deficiencia"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 405,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Possui alguma deficiência?",
+      "diagonalLabel": "Possui deficiência:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-possui-deficiencia",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-possui-deficiencia",
+              "content": "Sim"
+            }
+          ],
+          "next": "tipo-deficiencia-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-possui-deficiencia",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-trabalha-atualmente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 406,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Informe o tipo:",
+      "diagonalLabel": "Tipo de deficiência:",
+      "description": "Digite o tipo de deficiência",
+      "slug": "tipo-deficiencia-dependente",
+      "alternatives": [
+        "Visual",
+        "Auditiva",
+        "Fala",
+        "Física motora não cadeirante",
+        "Física motora cadeirante",
+        "Mental",
+        "Síndrome de down",
+        "LER/DORF",
+        "Autismo",
+        "Míltipla",
+        "Outra"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "dependente-trabalha-atualmente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 407,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Trabalha atualmente?",
+      "diagonalLabel": "Dependente trabalha:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-trabalha-atualmente",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-trabalha-atualmente",
+              "content": "Sim"
+            }
+          ],
+          "next": "dependente-funcionario-publico"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-trabalha-atualmente",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-aposentado"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 408,
+      "required": true,
+      "category ": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "É funcionário(a) público(a)?",
+      "diagonalLabel": "Funcionário(a) público(a):",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-funcionario-publico",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-funcionario-publico",
+              "content": "Sim"
+            }
+          ],
+          "next": "sabe-ler-escrever"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-funcionario-publico",
+              "content": "Não"
+            }
+          ],
+          "next": "trabalha-carteira-assinada"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 409,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Trabalha com carteira assinada?",
+      "diagonalLabel": "Trabalha com carteira assinada:",
+      "description": "Escolha uma das opções",
+      "slug": "trabalha-carteira-assinada",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "trabalha-carteira-assinada",
+              "content": "Sim"
+            }
+          ],
+          "next": "profissao-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "trabalha-carteira-assinada",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-autonomo"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 410,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "É autônomo(a)?",
+      "diagonalLabel": "Dependente é autônomo:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-autonomo",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-autonomo",
+              "content": "Sim"
+            }
+          ],
+          "next": "profissao-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-autonomo",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-empresario"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 411,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "É empresário(a)?",
+      "diagonalLabel": "Dependente é empresário:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-empresario",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-empresario",
+              "content": "Sim"
+            }
+          ],
+          "next": "profissao-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-empresario",
+              "content": "Não"
+            }
+          ],
+          "next": "sabe-ler-escrever"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 412,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "text",
+      "topicIcons": "family",
+      "residentLabel": "Qual a profissão?",
+      "diagonalLabel": "Profissão do dependente:",
+      "description": "Digite a profissão exercida",
+      "slug": "profissao-dependente",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "local-trabalho-dependente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 413,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Qual o local de trabalho?",
+      "diagonalLabel": "Local de trabalho:",
+      "description": "Escolha uma das opções",
+      "slug": "local-trabalho-dependente",
+      "alternatives": [
+        "Na residencia",
+        "No bairro",
+        "No município",
+        "Outra cidade",
+        "Sem local fixo"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "valor-renda-mensal"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 414,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "É aposentado ou pensionista?",
+      "diagonalLabel": "Dependente é aposentado:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-aposentado",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-aposentado",
+              "content": "Sim"
+            }
+          ],
+          "next": "valor-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-aposentado",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-invalido"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 415,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "É doente ou inválido(a)?",
+      "diagonalLabel": "Dependente é doente ou inválido(a):",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-invalido",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-invalido",
+              "content": "Sim"
+            }
+          ],
+          "next": "valor-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-invalido",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-procurando-emprego"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 416,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Está procurando emprego?",
+      "diagonalLabel": "Dependente está procurando emprego:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-procurando-emprego",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-procurando-emprego",
+              "content": "Sim"
+            }
+          ],
+          "next": "valor-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-procurando-emprego",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-estudante"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 417,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "É estudante?",
+      "diagonalLabel": "Dependente é estudante:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-estudante",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-estudante",
+              "content": "Sim"
+            }
+          ],
+          "next": "valor-renda-mensal"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-estudante",
+              "content": "Não"
+            }
+          ],
+          "next": "trabalha-cuidando-lar"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 418,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Trabalha cuidando do lar?",
+      "diagonalLabel": "Dependente trabalha cuidando do lar:",
+      "description": "Escolha uma das opções",
+      "slug": "trabalha-cuidando-lar",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "valor-renda-mensal"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 419,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "money",
+      "residentLabel": "Gostaria de informar o valor de sua renda mensal?",
+      "diagonalLabel": "Valor da renda mensal:",
+      "description": "Escolha uma das opções",
+      "slug": "valor-renda-mensal",
+      "alternatives": [
+        "Sim",
+        "Não sei",
+        "Não gostaria de informar",
+        "Sem renda"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "valor-renda-mensal",
+              "content": "Sim"
+            }
+          ],
+          "next": "dependente-renda-mensal"
+        },
+        {
+          "expression": [],
+          "next": "sabe-ler-escrever"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 4191,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "number",
+      "topicIcons": "money",
+      "residentLabel": "Informe o valor de sua renda mensal:",
+      "diagonalLabel": "Renda mensal do depentente:",
+      "description": "Responda abaixo",
+      "slug": "dependente-renda-mensal",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "sabe-ler-escrever"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 420,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Sabe ler ou escrever?",
+      "diagonalLabel": "Sabe ler ou escrever:",
+      "description": "Escolha uma das opções",
+      "slug": "sabe-ler-escrever",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "sabe-ler-escrever",
+              "content": "Sim"
+            }
+          ],
+          "next": "curso-superior-completo"
+        },
+        {
+          "expression": [
+            {
+              "slug": "sabe-ler-escrever",
+              "content": "Não"
+            }
+          ],
+          "next": "dependente-estudando-atualmente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 421,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Tem curso superior completo?",
+      "diagonalLabel": "Tem curso superior completo:",
+      "description": "Escolha uma das opções",
+      "slug": "curso-superior-completo",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "curso-superior-completo",
+              "content": "Sim"
+            }
+          ],
+          "next": "dependente-estudando-atualmente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "curso-superior-completo",
+              "content": "Não"
+            }
+          ],
+          "next": "concluiu-ensino-medio"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 422,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Concluiu o Ensino Médio?",
+      "diagonalLabel": "Concluiu o Ensino Médio:",
+      "description": "Escolha uma das opções",
+      "slug": "concluiu-ensino-medio",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "concluiu-ensino-medio",
+              "content": "Sim"
+            }
+          ],
+          "next": "dependente-estudando-atualmente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "concluiu-ensino-medio",
+              "content": "Não"
+            }
+          ],
+          "next": "concluiu-ensino-fundamental"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 423,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Concluiu o Ensino Fundamental?",
+      "diagonalLabel": "Concluiu o Ensino Fundamental:",
+      "description": "Escolha uma das opções",
+      "slug": "concluiu-ensino-fundamental",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "dependente-estudando-atualmente"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 424,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Está estudando atualmente?",
+      "diagonalLabel": "Está estudando atualmente:",
+      "description": "Escolha uma das opções",
+      "slug": "dependente-estudando-atualmente",
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-estudando-atualmente",
+              "content": "Sim"
+            }
+          ],
+          "next": "local-estabelecimento-ensino"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-estudando-atualmente",
+              "content": "Não"
+            }
+          ],
+          "next": "existem-outros-moradores"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 425,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Onde fica o estabelecimento de ensino?",
+      "diagonalLabel": "Localidade do estabelecimento de ensino:",
+      "description": "Escolha uma das opções",
+      "slug": "local-estabelecimento-ensino",
+      "alternatives": [
+        "No bairro",
+        "Outro bairro",
+        "Outra cidade",
+        "Não sabe informar"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "existem-outros-moradores"
+        }
+      ]
+    },
+    {
+      "isFirst": false,
+      "isLast": true,
+      "id": 500,
+      "required": true,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "family",
+      "residentLabel": "Concluir questionário?",
+      "diagonalLabel": "Fim da pesquisa",
+      "description": "Escolha uma das opções",
+      "slug": "fim-da-pesquisa",
+      "alternatives": [
+        "Concluir"
+      ],
+      "conditions": [
+        {
+          "expression": [],
+          "next": ""
+        }
+      ]
     }
   ]
 }
