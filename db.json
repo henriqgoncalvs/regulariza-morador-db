@@ -20,7 +20,10 @@
       "diagonalLabel": "Proprietário do imóvel:",
       "description": "Escolha uma das opções",
       "slug": "proprietario-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -54,7 +57,10 @@
       "diagonalLabel": "Morador do imóvel:",
       "description": "Escolha uma das opções",
       "slug": "morador-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -88,7 +94,10 @@
       "diagonalLabel": "Paga aluguel:",
       "description": "Escolha uma das opções",
       "slug": "paga-aluguel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -122,7 +131,10 @@
       "diagonalLabel": "Imóvel emprestado:",
       "description": "Escolha uma das opções",
       "slug": "emprestado-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -156,7 +168,10 @@
       "diagonalLabel": "Imóvel é moradia:",
       "description": "Escolha uma das opções",
       "slug": "moradia-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -190,7 +205,10 @@
       "diagonalLabel": "Comércio/fábrica/serviço no imóvel:",
       "description": "Escolha uma das opções",
       "slug": "servico-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -248,7 +266,10 @@
       "diagonalLabel": "Imóvel herdado:",
       "description": "Escolha uma opção apenas",
       "slug": "herdou-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -282,7 +303,11 @@
       "diagonalLabel": "Serviço do imóvel:",
       "description": "Escolha várias opções",
       "slug": "tipo-servico-imovel",
-      "alternatives": ["Uma fábrica", "Um comércio", "Um serviço"],
+      "alternatives": [
+        "Uma fábrica",
+        "Um comércio",
+        "Um serviço"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -302,7 +327,10 @@
       "diagonalLabel": "Imóvel com vários andares:",
       "description": "Escolha uma opção",
       "slug": "andar-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -376,7 +404,10 @@
       "diagonalLabel": "Imóvel como moradia e serviços",
       "description": "Escolha uma opção",
       "slug": "moradia-e-comercio-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -410,7 +441,10 @@
       "diagonalLabel": "Imóvel functiona igreja/algo cultural",
       "description": "Escolha uma opção",
       "slug": "cultura-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -444,7 +478,10 @@
       "diagonalLabel": "É um terreno",
       "description": "Escolha uma opção",
       "slug": "terreno-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -478,7 +515,10 @@
       "diagonalLabel": "Terreno vazio",
       "description": "Escolha uma opção",
       "slug": "terreno-vazio-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -532,7 +572,10 @@
       "diagonalLabel": "Construindo no terreno",
       "description": "Digite sua resposta",
       "slug": "construindo-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -566,7 +609,10 @@
       "diagonalLabel": "Responsável organização",
       "description": "Escolha uma resposta",
       "slug": "responsavel-organizacao-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -600,7 +646,10 @@
       "diagonalLabel": "Possui CPNJ organização",
       "description": "Escolha uma resposta",
       "slug": "possui-cnpj-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -654,7 +703,10 @@
       "diagonalLabel": "Dono negócio imóvel:",
       "description": "Escolha uma opção",
       "slug": "dono-negocio-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -705,7 +757,10 @@
       "diagonalLabel": "Comprou imóvel:",
       "description": "Escolha uma opção",
       "slug": "comprou-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -739,7 +794,10 @@
       "diagonalLabel": "Único herdeira(o):",
       "description": "Escolha uma opção",
       "slug": "unico-herdeiro",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -773,7 +831,10 @@
       "diagonalLabel": "Doação imóvel:",
       "description": "Escolha uma opção",
       "slug": "doacao-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -847,7 +908,10 @@
       "diagonalLabel": "Autorização uso do imóvel:",
       "description": "Escolha uma opção",
       "slug": "autorizacao-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -881,7 +945,10 @@
       "diagonalLabel": "Trocou imóvel:",
       "description": "Escolha uma opção",
       "slug": "trocou-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -915,7 +982,10 @@
       "diagonalLabel": "Posse imóvel:",
       "description": "Escolha uma opção",
       "slug": "posse-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -949,7 +1019,10 @@
       "diagonalLabel": "Usucapião imóvel:",
       "description": "Escolha uma opção",
       "slug": "usucapiao-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -989,7 +1062,10 @@
       "diagonalLabel": "Valor foi em reais:",
       "description": "Escolha uma opção",
       "slug": "foi-em-reais-compra",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1083,7 +1159,10 @@
       "diagonalLabel": "Tem documento prova:",
       "description": "Escolha uma opção",
       "slug": "documento-prova-ano-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1117,7 +1196,10 @@
       "diagonalLabel": "Documentos imóvel:",
       "description": "Escolha várias opções",
       "slug": "documento-prova-imovel",
-      "alternatives": ["Comprovante de residência", "IPTU"],
+      "alternatives": [
+        "Comprovante de residência",
+        "IPTU"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -1180,7 +1262,10 @@
       "diagonalLabel": "Imóvel Registrado Cartório:",
       "description": "Escolha uma opção",
       "slug": "registrado-cartorio-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1293,7 +1378,11 @@
       "diagonalLabel": "Gênero:",
       "description": "Escolha uma das opções",
       "slug": "morador-genero",
-      "alternatives": ["Masculino", "Feminino", "Não Binário"],
+      "alternatives": [
+        "Masculino",
+        "Feminino",
+        "Não Binário"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -1648,7 +1737,10 @@
       "diagonalLabel": "Possui deficiência:",
       "description": "Escolha uma das opções",
       "slug": "morador-deficiencia",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1714,7 +1806,10 @@
       "diagonalLabel": "Trabalha atualmente:",
       "description": "Escolha uma das opções",
       "slug": "morador-trabalha",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1748,7 +1843,10 @@
       "diagonalLabel": "Morador aposentado ou pensionista:",
       "description": "EScolha uma das opções",
       "slug": "morador-aposentado-pensionista",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1782,7 +1880,10 @@
       "diagonalLabel": "Proprietário(a) doente ou inválido(a):",
       "description": "Escolha uma das opções",
       "slug": "proprietario-doente-invalido",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1816,7 +1917,10 @@
       "diagonalLabel": "Morador procurando emprego:",
       "description": "Escolha uma das opções",
       "slug": "morador-procurando-emprego",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1850,7 +1954,10 @@
       "diagonalLabel": "Morador é estudante:",
       "description": "Escolha uma das opções",
       "slug": "morador-estudante",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1884,7 +1991,10 @@
       "diagonalLabel": "Morador cuida do próprio lar",
       "description": "Escolha uma das opções",
       "slug": "morador-cuida-de-casa",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -1904,7 +2014,10 @@
       "diagonalLabel": "Morador é funcionário público:",
       "description": "Escolha uma das opções",
       "slug": "morador-funcionario-publico",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1938,7 +2051,10 @@
       "diagonalLabel": "Morador trabalha com carteira assinada",
       "description": "Escolha uma das opções",
       "slug": "morador-carteira-assinada",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -1972,7 +2088,10 @@
       "diagonalLabel": "Morador trabalha de forma autônoma:",
       "description": "Escolha uma das opções",
       "slug": "morador-autonomo",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2006,7 +2125,10 @@
       "diagonalLabel": "Morador é empresário:",
       "description": "Escolha uma das opções",
       "slug": "morador-empresario",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -2072,7 +2194,10 @@
       "diagonalLabel": "Morador informou renda mensal:",
       "description": "Escolha uma das opções",
       "slug": "morador-informou-renda",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2126,7 +2251,10 @@
       "diagonalLabel": "Morador sabe ler ou escrever:",
       "description": "Escolha uma das opções",
       "slug": "morador-alfabetizado",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2160,7 +2288,10 @@
       "diagonalLabel": "Morador concluiu curso superior:",
       "description": "Escolha uma das opções",
       "slug": "morador-graduado",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2194,7 +2325,10 @@
       "diagonalLabel": "Morador concluiu o Ensino Médio:",
       "description": "Escolha uma das opções",
       "slug": "morador-completou-ensino-medio",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2228,7 +2362,10 @@
       "diagonalLabel": "Morador concluiu o Ensino Fundamental:",
       "description": "Escolha uma das opções",
       "slug": "morador-concluiu-ensino-fundamental",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -2248,7 +2385,10 @@
       "diagonalLabel": "Morador estuda atualmente:",
       "description": "Escolha uma das opções",
       "slug": "morador-estuda-atualmente",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2787,7 +2927,10 @@
       "diagonalLabel": "Residente possui outro imóvel:",
       "description": "Escolha uma das opções:",
       "slug": "possui-outro-imovel",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2821,7 +2964,10 @@
       "diagonalLabel": "Imóvel possui matrícula:",
       "description": "Escolha uma das opções:",
       "slug": "imovel-possui-matricula",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2830,7 +2976,7 @@
               "content": "Sim"
             }
           ],
-          "next": "numero-matricula-imovel"
+          "next": "info-numero-matricula-imovel"
         },
         {
           "expression": [
@@ -2854,7 +3000,7 @@
       "residentLabel": "Informe o número da matrícula:",
       "diagonalLabel": "Número da matrícula:",
       "description": "Digite o número da matrícula (somente números):",
-      "slug": "numero-matricula-imovel",
+      "slug": "info-numero-matricula-imovel",
       "alternatives": [],
       "conditions": [
         {
@@ -2895,7 +3041,10 @@
       "diagonalLabel": "Atendido por algum programa habitacional:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-situacao-habitacional",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -2915,7 +3064,10 @@
       "diagonalLabel": "Renda inferior a 05 salários mínimos:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-renda-familiar",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -2935,7 +3087,10 @@
       "diagonalLabel": "Possui outro imóvel:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-outros-imoveis",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -2955,7 +3110,10 @@
       "diagonalLabel": "Existem outros proprietários:",
       "description": "Escolha uma das opções:",
       "slug": "outros-proprietarios",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -2989,7 +3147,10 @@
       "diagonalLabel": "Existem outros moradores:",
       "description": "Escolha uma das opções:",
       "slug": "existem-outros-moradores",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3104,7 +3265,10 @@
       "diagonalLabel": "Gênero:",
       "description": "Escolha uma das opções",
       "slug": "genero-dependente",
-      "alternatives": ["Masculino", "Feminino"],
+      "alternatives": [
+        "Masculino",
+        "Feminino"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -3195,7 +3359,10 @@
       "diagonalLabel": "Possui deficiência:",
       "description": "Escolha uma das opções",
       "slug": "dependente-possui-deficiencia",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3261,7 +3428,10 @@
       "diagonalLabel": "Dependente trabalha:",
       "description": "Escolha uma das opções",
       "slug": "dependente-trabalha-atualmente",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3295,7 +3465,10 @@
       "diagonalLabel": "Funcionário(a) público(a):",
       "description": "Escolha uma das opções",
       "slug": "dependente-funcionario-publico",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3329,7 +3502,10 @@
       "diagonalLabel": "Trabalha com carteira assinada:",
       "description": "Escolha uma das opções",
       "slug": "trabalha-carteira-assinada",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3363,7 +3539,10 @@
       "diagonalLabel": "Dependente é autônomo:",
       "description": "Escolha uma das opções",
       "slug": "dependente-autonomo",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3397,7 +3576,10 @@
       "diagonalLabel": "Dependente é empresário:",
       "description": "Escolha uma das opções",
       "slug": "dependente-empresario",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3477,7 +3659,10 @@
       "diagonalLabel": "Dependente é aposentado:",
       "description": "Escolha uma das opções",
       "slug": "dependente-aposentado",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3511,7 +3696,10 @@
       "diagonalLabel": "Dependente é doente ou inválido(a):",
       "description": "Escolha uma das opções",
       "slug": "dependente-invalido",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3545,7 +3733,10 @@
       "diagonalLabel": "Dependente está procurando emprego:",
       "description": "Escolha uma das opções",
       "slug": "dependente-procurando-emprego",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3579,7 +3770,10 @@
       "diagonalLabel": "Dependente é estudante:",
       "description": "Escolha uma das opções",
       "slug": "dependente-estudante",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3613,7 +3807,10 @@
       "diagonalLabel": "Dependente trabalha cuidando do lar:",
       "description": "Escolha uma das opções",
       "slug": "trabalha-cuidando-lar",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -3687,7 +3884,10 @@
       "diagonalLabel": "Sabe ler ou escrever:",
       "description": "Escolha uma das opções",
       "slug": "sabe-ler-escrever",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3721,7 +3921,10 @@
       "diagonalLabel": "Tem curso superior completo:",
       "description": "Escolha uma das opções",
       "slug": "curso-superior-completo",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3755,7 +3958,10 @@
       "diagonalLabel": "Concluiu o Ensino Médio:",
       "description": "Escolha uma das opções",
       "slug": "concluiu-ensino-medio",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3789,7 +3995,10 @@
       "diagonalLabel": "Concluiu o Ensino Fundamental:",
       "description": "Escolha uma das opções",
       "slug": "concluiu-ensino-fundamental",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -3809,7 +4018,10 @@
       "diagonalLabel": "Está estudando atualmente:",
       "description": "Escolha uma das opções",
       "slug": "dependente-estudando-atualmente",
-      "alternatives": ["Sim", "Não"],
+      "alternatives": [
+        "Sim",
+        "Não"
+      ],
       "conditions": [
         {
           "expression": [
@@ -3868,7 +4080,9 @@
       "diagonalLabel": "Fim da pesquisa",
       "description": "Escolha uma das opções",
       "slug": "fim-da-pesquisa",
-      "alternatives": ["Concluir"],
+      "alternatives": [
+        "Concluir"
+      ],
       "conditions": [
         {
           "expression": [],
