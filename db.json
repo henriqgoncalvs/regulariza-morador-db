@@ -4,11 +4,7 @@
     "role": "Admin",
     "cpf": "123.456.789-10",
     "phone": "(87) 9 88254611",
-    "stamp": "142932",
-    "residentFormData": {
-      "currentQuestion": [],
-      "answered": false
-    }
+    "stamp": "142932"
   },
   "answers": [],
   "questions": [
@@ -24,10 +20,7 @@
       "diagonalLabel": "Proprietário do imóvel:",
       "description": "Escolha uma das opções",
       "slug": "proprietario-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -61,10 +54,7 @@
       "diagonalLabel": "Morador do imóvel:",
       "description": "Escolha uma das opções",
       "slug": "morador-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -98,10 +88,7 @@
       "diagonalLabel": "Paga aluguel:",
       "description": "Escolha uma das opções",
       "slug": "paga-aluguel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -135,10 +122,7 @@
       "diagonalLabel": "Imóvel emprestado:",
       "description": "Escolha uma das opções",
       "slug": "emprestado-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -172,10 +156,7 @@
       "diagonalLabel": "Imóvel é moradia:",
       "description": "Escolha uma das opções",
       "slug": "moradia-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -209,10 +190,7 @@
       "diagonalLabel": "Comércio/fábrica/serviço no imóvel:",
       "description": "Escolha uma das opções",
       "slug": "servico-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -270,10 +248,7 @@
       "diagonalLabel": "Imóvel herdado:",
       "description": "Escolha uma opção apenas",
       "slug": "herdou-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -307,11 +282,7 @@
       "diagonalLabel": "Serviço do imóvel:",
       "description": "Escolha várias opções",
       "slug": "tipo-servico-imovel",
-      "alternatives": [
-        "Uma fábrica",
-        "Um comércio",
-        "Um serviço"
-      ],
+      "alternatives": ["Uma fábrica", "Um comércio", "Um serviço"],
       "conditions": [
         {
           "expression": [],
@@ -331,10 +302,7 @@
       "diagonalLabel": "Imóvel com vários andares:",
       "description": "Escolha uma opção",
       "slug": "andar-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -408,10 +376,7 @@
       "diagonalLabel": "Imóvel como moradia e serviços",
       "description": "Escolha uma opção",
       "slug": "moradia-e-comercio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -445,10 +410,7 @@
       "diagonalLabel": "Imóvel functiona igreja/algo cultural",
       "description": "Escolha uma opção",
       "slug": "cultura-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -482,10 +444,7 @@
       "diagonalLabel": "É um terreno",
       "description": "Escolha uma opção",
       "slug": "terreno-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -519,10 +478,7 @@
       "diagonalLabel": "Terreno vazio",
       "description": "Escolha uma opção",
       "slug": "terreno-vazio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -576,10 +532,7 @@
       "diagonalLabel": "Construindo no terreno",
       "description": "Digite sua resposta",
       "slug": "construindo-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -613,10 +566,7 @@
       "diagonalLabel": "Responsável organização",
       "description": "Escolha uma resposta",
       "slug": "responsavel-organizacao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -650,10 +600,7 @@
       "diagonalLabel": "Possui CPNJ organização",
       "description": "Escolha uma resposta",
       "slug": "possui-cnpj-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -681,11 +628,11 @@
       "id": 20,
       "required": false,
       "category": "residence",
-      "type": "text",
+      "type": "cnpj",
       "topicIcons": "residence",
       "residentLabel": "Digite o número do seu CNPJ",
       "diagonalLabel": "CNPJ",
-      "description": "Digite o número do RG",
+      "description": "Digite o número do CNPJ",
       "slug": "cnpj-imovel",
       "alternatives": [],
       "conditions": [
@@ -707,10 +654,7 @@
       "diagonalLabel": "Dono negócio imóvel:",
       "description": "Escolha uma opção",
       "slug": "dono-negocio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -761,10 +705,7 @@
       "diagonalLabel": "Comprou imóvel:",
       "description": "Escolha uma opção",
       "slug": "comprou-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -798,10 +739,7 @@
       "diagonalLabel": "Único herdeira(o):",
       "description": "Escolha uma opção",
       "slug": "unico-herdeiro",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -835,10 +773,7 @@
       "diagonalLabel": "Doação imóvel:",
       "description": "Escolha uma opção",
       "slug": "doacao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -912,10 +847,7 @@
       "diagonalLabel": "Autorização uso do imóvel:",
       "description": "Escolha uma opção",
       "slug": "autorizacao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -949,10 +881,7 @@
       "diagonalLabel": "Trocou imóvel:",
       "description": "Escolha uma opção",
       "slug": "trocou-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -986,10 +915,7 @@
       "diagonalLabel": "Posse imóvel:",
       "description": "Escolha uma opção",
       "slug": "posse-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1023,10 +949,7 @@
       "diagonalLabel": "Usucapião imóvel:",
       "description": "Escolha uma opção",
       "slug": "usucapiao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -1040,7 +963,7 @@
       "id": 31,
       "required": false,
       "category": "residence",
-      "type": "text",
+      "type": "date",
       "topicIcons": "residence",
       "residentLabel": "Digite a data da compra",
       "diagonalLabel": "Data compra imóvel:",
@@ -1066,10 +989,7 @@
       "diagonalLabel": "Valor foi em reais:",
       "description": "Escolha uma opção",
       "slug": "foi-em-reais-compra",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1117,9 +1037,9 @@
       "id": 34,
       "required": false,
       "category": "residence",
-      "type": "text",
+      "type": "money",
       "topicIcons": "residence",
-      "residentLabel": "Digite o valor",
+      "residentLabel": "Digite o valor pago na compra do imóvel.",
       "diagonalLabel": "Valor compra:",
       "description": "Digite o valor",
       "slug": "valor-compra-imovel",
@@ -1137,7 +1057,7 @@
       "id": 35,
       "required": false,
       "category": "residence",
-      "type": "text",
+      "type": "money",
       "topicIcons": "residence",
       "residentLabel": "Quanto vale o seu imóvel, hoje?",
       "diagonalLabel": "Valor imóvel:",
@@ -1163,10 +1083,7 @@
       "diagonalLabel": "Tem documento prova:",
       "description": "Escolha uma opção",
       "slug": "documento-prova-ano-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1200,10 +1117,7 @@
       "diagonalLabel": "Documentos imóvel:",
       "description": "Escolha várias opções",
       "slug": "documento-prova-imovel",
-      "alternatives": [
-        "Comprovante de residência",
-        "IPTU"
-      ],
+      "alternatives": ["Comprovante de residência", "IPTU"],
       "conditions": [
         {
           "expression": [],
@@ -1266,10 +1180,7 @@
       "diagonalLabel": "Imóvel Registrado Cartório:",
       "description": "Escolha uma opção",
       "slug": "registrado-cartorio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1318,9 +1229,9 @@
       "category": "residence",
       "type": "file",
       "topicIcons": "residence",
-      "residentLabel": "Faça o upload desse documento:",
+      "residentLabel": "Anexe o documento:",
       "diagonalLabel": "Documento prova de ano imóvel:",
-      "description": "Upload do documento",
+      "description": "Anexe o documento",
       "slug": "upload-documento-prova-ano-imovel",
       "alternatives": [],
       "conditions": [
@@ -1382,10 +1293,7 @@
       "diagonalLabel": "Gênero:",
       "description": "Escolha uma das opções",
       "slug": "morador-genero",
-      "alternatives": [
-        "Masculino",
-        "Feminino"
-      ],
+      "alternatives": ["Masculino", "Feminino", "Não Binário"],
       "conditions": [
         {
           "expression": [],
@@ -1399,7 +1307,7 @@
       "id": 104,
       "required": true,
       "category": "socioeconomic",
-      "type": "text",
+      "type": "date",
       "topicIcons": "person",
       "residentLabel": "Digite sua data de nascimento.",
       "diagonalLabel": "Data de nascimento:",
@@ -1419,13 +1327,260 @@
       "id": 105,
       "required": true,
       "category": "socioeconomic",
-      "type": "text",
+      "type": "select",
       "topicIcons": "location",
       "residentLabel": "Em qual país você nasceu?",
       "diagonalLabel": "Nacionalidade:",
       "description": "Responda abaixo",
       "slug": "morador-pais",
-      "alternatives": [],
+      "alternatives": [
+        "Afeganistão",
+        "África do Sul",
+        "Albânia",
+        "Alemanha",
+        "Andorra",
+        "Angola",
+        "Anguilla",
+        "Antártida",
+        "Antígua e Barbuda",
+        "Antilhas Holandesas",
+        "Arábia Saudita",
+        "Argélia",
+        "Argentina",
+        "Armênia",
+        "Aruba",
+        "Austrália",
+        "Áustria",
+        "Azerbaijão",
+        "Bahamas",
+        "Bahrein",
+        "Bangladesh",
+        "Barbados",
+        "Belarus",
+        "Bélgica",
+        "Belize",
+        "Benin",
+        "Bermudas",
+        "Bolívia",
+        "Bósnia-Herzegóvina",
+        "Botsuana",
+        "Brasil",
+        "Brunei",
+        "Bulgária",
+        "Burkina Fasso",
+        "Burundi",
+        "Butão",
+        "Cabo Verde",
+        "Camarões",
+        "Camboja",
+        "Canadá",
+        "Cazaquistão",
+        "Chade",
+        "Chile",
+        "China",
+        "Chipre",
+        "Cingapura",
+        "Colômbia",
+        "Congo",
+        "Coréia do Norte",
+        "Coréia do Sul",
+        "Costa do Marfim",
+        "Costa Rica",
+        "Croácia (Hrvatska)",
+        "Cuba",
+        "Dinamarca",
+        "Djibuti",
+        "Dominica",
+        "Egito",
+        "El Salvador",
+        "Emirados Árabes Unidos",
+        "Equador",
+        "Eritréia",
+        "Eslováquia",
+        "Eslovênia",
+        "Espanha",
+        "Estados Unidos",
+        "Estônia",
+        "Etiópia",
+        "Fiji",
+        "Filipinas",
+        "Finlândia",
+        "França",
+        "Gabão",
+        "Gâmbia",
+        "Gana",
+        "Geórgia",
+        "Gibraltar",
+        "Grã-Bretanha (Reino Unido, UK)",
+        "Granada",
+        "Grécia",
+        "Groelândia",
+        "Guadalupe",
+        "Guam (Território dos Estados Unidos)",
+        "Guatemala",
+        "Guernsey",
+        "Guiana",
+        "Guiana Francesa",
+        "Guiné",
+        "Guiné Equatorial",
+        "Guiné-Bissau",
+        "Haiti",
+        "Holanda",
+        "Honduras",
+        "Hong Kong",
+        "Hungria",
+        "Iêmen",
+        "Ilha Bouvet (Território da Noruega)",
+        "Ilha do Homem",
+        "Ilha Natal",
+        "Ilha Pitcairn",
+        "Ilha Reunião",
+        "Ilhas Aland",
+        "Ilhas Cayman",
+        "Ilhas Cocos",
+        "Ilhas Comores",
+        "Ilhas Cook",
+        "Ilhas Faroes",
+        "Ilhas Falkland (Malvinas)",
+        "Ilhas Geórgia do Sul e Sandwich do Sul",
+        "Ilhas Heard e McDonald (Território da Austrália)",
+        "Ilhas Marianas do Norte",
+        "Ilhas Marshall",
+        "Ilhas Menores dos Estados Unidos",
+        "Ilhas Norfolk",
+        "Ilhas Seychelles",
+        "Ilhas Solomão",
+        "Ilhas Svalbard e Jan Mayen",
+        "Ilhas Tokelau",
+        "Ilhas Turks e Caicos",
+        "Ilhas Virgens (Estados Unidos)",
+        "Ilhas Virgens (Inglaterra)",
+        "Ilhas Wallis e Futuna",
+        "índia",
+        "Indonésia",
+        "Irã",
+        "Iraque",
+        "Irlanda",
+        "Islândia",
+        "Israel",
+        "Itália",
+        "Jamaica",
+        "Japão",
+        "Jersey",
+        "Jordânia",
+        "Kênia",
+        "Kiribati",
+        "Kuait",
+        "Laos",
+        "Látvia",
+        "Lesoto",
+        "Líbano",
+        "Libéria",
+        "Líbia",
+        "Liechtenstein",
+        "Lituânia",
+        "Luxemburgo",
+        "Macau",
+        "Macedônia (República Yugoslava)",
+        "Madagascar",
+        "Malásia",
+        "Malaui",
+        "Maldivas",
+        "Mali",
+        "Malta",
+        "Marrocos",
+        "Martinica",
+        "Maurício",
+        "Mauritânia",
+        "Mayotte",
+        "México",
+        "Micronésia",
+        "Moçambique",
+        "Moldova",
+        "Mônaco",
+        "Mongólia",
+        "Montenegro",
+        "Montserrat",
+        "Myanma",
+        "Namíbia",
+        "Nauru",
+        "Nepal",
+        "Nicarágua",
+        "Níger",
+        "Nigéria",
+        "Niue",
+        "Noruega",
+        "Nova Caledônia",
+        "Nova Zelândia",
+        "Omã",
+        "Palau",
+        "Panamá",
+        "Papua-Nova Guiné",
+        "Paquistão",
+        "Paraguai",
+        "Peru",
+        "Polinésia Francesa",
+        "Polônia",
+        "Porto Rico",
+        "Portugal",
+        "Qatar",
+        "Quirguistão",
+        "República Centro-Africana",
+        "República Democrática do Congo",
+        "República Dominicana",
+        "República Tcheca",
+        "Romênia",
+        "Ruanda",
+        "Rússia (antiga URSS) - Federação Russa",
+        "Saara Ocidental",
+        "Saint Vincente e Granadinas",
+        "Samoa Americana",
+        "Samoa Ocidental",
+        "San Marino",
+        "Santa Helena",
+        "Santa Lúcia",
+        "São Bartolomeu",
+        "São Cristóvão e Névis",
+        "São Martim",
+        "São Tomé e Príncipe",
+        "Senegal",
+        "Serra Leoa",
+        "Sérvia",
+        "Síria",
+        "Somália",
+        "Sri Lanka",
+        "St. Pierre and Miquelon",
+        "Suazilândia",
+        "Sudão",
+        "Suécia",
+        "Suíça",
+        "Suriname",
+        "Tadjiquistão",
+        "Tailândia",
+        "Taiwan",
+        "Tanzânia",
+        "Território Britânico do Oceano índico",
+        "Territórios do Sul da França",
+        "Territórios Palestinos Ocupados",
+        "Timor Leste",
+        "Togo",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Tunísia",
+        "Turcomenistão",
+        "Turquia",
+        "Tuvalu",
+        "Ucrânia",
+        "Uganda",
+        "Uruguai",
+        "Uzbequistão",
+        "Vanuatu",
+        "Vaticano",
+        "Venezuela",
+        "Vietnã",
+        "Zâmbia",
+        "Zimbábue"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -1439,13 +1594,41 @@
       "id": 106,
       "required": true,
       "category": "socioeconomic",
-      "type": "text",
+      "type": "select",
       "topicIcons": "location",
       "residentLabel": "Em qual estado você nasceu?",
       "diagonalLabel": "Naturalidade:",
       "description": "Responda abaixo",
       "slug": "morador-estado",
-      "alternatives": [],
+      "alternatives": [
+        "Alagoas",
+        "Acre",
+        "Amapá",
+        "Amazonas",
+        "Bahia",
+        "Ceará",
+        "Distrito Federal",
+        "Espírito Santo",
+        "Goías",
+        "Maranhão",
+        "Mato Grosso",
+        "Mato Grosso do Sul",
+        "Minas Gerais",
+        "Pará",
+        "Paraíba",
+        "Paraná",
+        "Pernambuco",
+        "Piauí",
+        "Rio de Janeiro",
+        "Rio Grande do Norte",
+        "Rio Grande do Sul",
+        "Rondônia",
+        "Roraíma",
+        "Santa Catarina",
+        "São Paulo",
+        "Sergipe",
+        "Tocantins"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -1461,14 +1644,11 @@
       "category": "socioeconomic",
       "type": "radio",
       "topicIcons": "person",
-      "residentLabel": "Vvocê possui alguma deficiência?",
+      "residentLabel": "Você possui alguma deficiência?",
       "diagonalLabel": "Possui deficiência:",
       "description": "Escolha uma das opções",
       "slug": "morador-deficiencia",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1496,7 +1676,7 @@
       "id": 108,
       "required": true,
       "category": "socioeconomic",
-      "type": "radio",
+      "type": "checkbox",
       "topicIcons": "person",
       "residentLabel": "Informe o tipo.",
       "diagonalLabel": "Deficiência:",
@@ -1510,7 +1690,7 @@
         "Física motora cadeirante",
         "Mental",
         "Síndrome de down",
-        "LER/DORF",
+        "LER/DORT",
         "Autismo",
         "Múltipla",
         "Outra"
@@ -1534,10 +1714,7 @@
       "diagonalLabel": "Trabalha atualmente:",
       "description": "Escolha uma das opções",
       "slug": "morador-trabalha",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1571,10 +1748,7 @@
       "diagonalLabel": "Morador aposentado ou pensionista:",
       "description": "EScolha uma das opções",
       "slug": "morador-aposentado-pensionista",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1608,10 +1782,7 @@
       "diagonalLabel": "Proprietário(a) doente ou inválido(a):",
       "description": "Escolha uma das opções",
       "slug": "proprietario-doente-invalido",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1645,10 +1816,7 @@
       "diagonalLabel": "Morador procurando emprego:",
       "description": "Escolha uma das opções",
       "slug": "morador-procurando-emprego",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1682,10 +1850,7 @@
       "diagonalLabel": "Morador é estudante:",
       "description": "Escolha uma das opções",
       "slug": "morador-estudante",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1719,10 +1884,7 @@
       "diagonalLabel": "Morador cuida do próprio lar",
       "description": "Escolha uma das opções",
       "slug": "morador-cuida-de-casa",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -1742,10 +1904,7 @@
       "diagonalLabel": "Morador é funcionário público:",
       "description": "Escolha uma das opções",
       "slug": "morador-funcionario-publico",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1779,10 +1938,7 @@
       "diagonalLabel": "Morador trabalha com carteira assinada",
       "description": "Escolha uma das opções",
       "slug": "morador-carteira-assinada",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1816,10 +1972,7 @@
       "diagonalLabel": "Morador trabalha de forma autônoma:",
       "description": "Escolha uma das opções",
       "slug": "morador-autonomo",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1853,10 +2006,7 @@
       "diagonalLabel": "Morador é empresário:",
       "description": "Escolha uma das opções",
       "slug": "morador-empresario",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -1922,10 +2072,7 @@
       "diagonalLabel": "Morador informou renda mensal:",
       "description": "Escolha uma das opções",
       "slug": "morador-informou-renda",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -1953,7 +2100,7 @@
       "id": 128,
       "required": true,
       "category": "socioeconomic",
-      "type": "number",
+      "type": "money",
       "topicIcons": "money",
       "residentLabel": "Informe o valor de sua renda mensal.",
       "diagonalLabel": "Renda mensal do morador:",
@@ -1979,10 +2126,7 @@
       "diagonalLabel": "Morador sabe ler ou escrever:",
       "description": "Escolha uma das opções",
       "slug": "morador-alfabetizado",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2016,10 +2160,7 @@
       "diagonalLabel": "Morador concluiu curso superior:",
       "description": "Escolha uma das opções",
       "slug": "morador-graduado",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2053,10 +2194,7 @@
       "diagonalLabel": "Morador concluiu o Ensino Médio:",
       "description": "Escolha uma das opções",
       "slug": "morador-completou-ensino-medio",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2090,10 +2228,7 @@
       "diagonalLabel": "Morador concluiu o Ensino Fundamental:",
       "description": "Escolha uma das opções",
       "slug": "morador-concluiu-ensino-fundamental",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -2113,10 +2248,7 @@
       "diagonalLabel": "Morador estuda atualmente:",
       "description": "Escolha uma das opções",
       "slug": "morador-estuda-atualmente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2169,7 +2301,7 @@
       "id": 300,
       "required": false,
       "category": "documents",
-      "type": "text",
+      "type": "number",
       "topicIcons": "person",
       "residentLabel": "Número do RG:",
       "diagonalLabel": "Número do RG:",
@@ -2189,13 +2321,207 @@
       "id": 301,
       "required": false,
       "category": "documents",
-      "type": "text",
+      "type": "select",
       "topicIcons": "person",
       "residentLabel": "Órgão emissor:",
       "diagonalLabel": "Órgão emissor:",
       "description": "Digite o órgão emissor do documento",
       "slug": "orgao-emissor-rg",
-      "alternatives": [],
+      "alternatives": [
+        "ABNC - Academia Brasileira de Neurocirurgia",
+        "AGU - Advocacia-Geral da União",
+        "ANAC - Agência Nacional de Aviação Civil",
+        "CAER - Clube de Aeronáutica",
+        "CAU - Conselho de Arquitetura e Urbanismo",
+        "CBM - Corpo de Bombeiro Militar",
+        "CFA - Conselho Federal Administração",
+        "CFB - Conselho Federal de Biblioteconomia",
+        "CFBIO - Conselho Federal de Biologia",
+        "CFBM - Conselho Federal de Biomedicina",
+        "CFC - Conselho Federal de Contabilidade",
+        "CFESS - Conselho Federal de Serviço Social",
+        "CFF - Conselho Regional de Farmácia",
+        "CFFA - Conselho Federal de Fonoaudiologia",
+        "CFM - Conselho Federal de Medicina",
+        "CFMV - Conselho Federal de Medicina Veterinária",
+        "CFN - Conselho Federal de Nutrição",
+        "CFO - Conselho Federal de Odontologia",
+        "CFP - Conselho Federal de Psicologia",
+        "CFQ - Conselho Regional de Química",
+        "CFT - Conselho Federal dos Técnicos Industriais",
+        "CFTA - Conselho Federal dos Técnicos Agrícolas",
+        "CGPI - Coordenação Geral de Privilégios e Imunidades",
+        "CGPMAF - Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras",
+        "CIPC - Centro de Inteligência da Polícia Civil",
+        "CNIG - Conselho Nacional de Imigração",
+        "CNT - Confederação Nacional do Transporte",
+        "CNTV - Confederação Nacional de Vigilantes & Prestadores de Serviços",
+        "COFECI - Conselho Federal de Corretores de Imóveis",
+        "COFECON - Conselho Federal de Economia",
+        "COFEM - Conselho Federal de Museologia",
+        "COFEN - Conselho Federal de Enfermagem",
+        "COFFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional",
+        "COMAER - Comando da Aeronáutica",
+        "CONFE - Conselho Federal de Estatística",
+        "CONFEA - Conselho Federal de Engenharia e Agronomia",
+        "CONFEF - Conselho Federal de Educação Física",
+        "CONFERE - Conselho Federal dos Representantes Comerciais",
+        "CONRE - Conselho Regional de Estatística",
+        "CONRERP - Conselho Federal de Profissionais de Relações Públicas",
+        "CORE - Conselho Regional dos Representantes Comerciais",
+        "CORECON - Conselho Regional de Economia",
+        "COREM - Conselho Regional de Museologia",
+        "COREN - Conselho Regional de Enfermagem",
+        "CRA - Conselho Regional de Administração",
+        "CRAS - Centro de Referência de Assistência Social",
+        "CRB - Conselho Regional de Biblioteconomia",
+        "CRBIO - Conselho Regional de Biologia",
+        "CRBM - Conselho Regional de Biomedicina",
+        "CRC - Conselho Regional de Contabilidade",
+        "CREA - Conselho Regional de Engenharia e Agronomia",
+        "CRECI - Conselho Regional de Corretores de Imóveis",
+        "CREF - Conselho Regional de Educação Física",
+        "CREFITO - Conselho Regional de Fisioterapia e Terapia Ocupacional",
+        "CRESS - Conselho Regional de Serviço Social",
+        "CRF - Conselho Regional de Farmácia",
+        "CRFA - Conselho Regional de Fonoaudiologia",
+        "CRM - Conselho Regional de Medicina",
+        "CRMV - Conselho Regional de Medicina Veterinária",
+        "CRN - Conselho Regional de Nutrição",
+        "CRO - Conselho Regional de Odontologia",
+        "CRP - Conselho Regional de Psicologia",
+        "CRPRE - Conselho Regional de Profissionais de Relações Públicas",
+        "CRQ - Conselho Regional de Química",
+        "CRT - Conselho Regional dos Técnicos Industriais",
+        "CRTA - Conselho Regional de Técnicos de Administração",
+        "CTPS - Carteira de Trabalho e Previdência Social",
+        "CV - Cartório Civil",
+        "DELEMIG - Delegacia de Polícia de Imigração",
+        "DETRAN - Departamento Estadual de Trânsito",
+        "DGPC - Diretoria Geral da Polícia Civil",
+        "DIC - Diretoria de Identificação Civil",
+        "DICC - Diretoria de Identificação Civil e Criminal",
+        "DIREX - Diretoria Executiva",
+        "DPF - Departamento de Polícia Federal",
+        "DPMAF - Divisão de Polícia Marítima, Aérea e de Fronteiras",
+        "DPT - Departamento de Polícia Técnica Geral",
+        "DPTC - Departamento de Polícia Técnico Científica",
+        "DREX - Delegacia Regional Executiva",
+        "DRT - Delegacia Regional do Trabalho",
+        "EB - Exército Brasileiro",
+        "FAB - Força Aérea Brasileira",
+        "FENAJ - Federação Nacional dos Jornalistas",
+        "FGTS - Fundo de Garantia do Tempo de Serviço",
+        "FIPE - Fundação Instituto de Pesquisas Econômicas",
+        "FLS - Fundação Lyndolpho Silva",
+        "FUNAI - Fundação Nacional do Índio",
+        "GEJSP - Gerência de Estado de Justiça, Segurança Pública e Cidadania",
+        "GEJSPC - Gerência de Estado de Justiça, Segurança Pública e Cidadania",
+        "GEJUSPC - Gerência de Estado de Justiça, Segurança Pública e Cidadania",
+        "GESP - Gerência de Estado de Segurança Pública",
+        "GOVGO - Governo do Estado de Goiás",
+        "I CLA - Carteira de Identidade Classista",
+        "ICP - Instituto de Polícia Científica",
+        "IDAMP - Instituto de Identificação Dr. Aroldo Mendes Paiva",
+        "IFP - Instituto Félix Pacheco",
+        "IGP - Instituto Geral de Perícias",
+        "IIACM - Instituto de Identificação Aderson Conceição de Melo",
+        "IICC - Instituto de Identificação Civil e Criminal",
+        "IICCECF - Instituto de Identificação Civil e Criminal Engrácia da Costa Francisco",
+        "IICM - Instituto de Identificação Carlos Menezes",
+        "IIGP - Instituto de Identificação Gonçalo Pereira",
+        "IIJDM - Instituto de Identificação João de Deus Martins",
+        "IIPC - Instituto de Identificação da Polícia Civil",
+        "IIPC - Instituto de Identificação Pedro Mello",
+        "IIRGD - Instituto de Identificação Ricardo Gumbleton Daunt",
+        "IIRHM - Instituto de Identificação Raimundo Hermínio de Melo",
+        "IITB - Instituto de Identificação Tavares Buril",
+        "IML - Instituto Médico-Legal",
+        "INI - Instituto Nacional de Identificação",
+        "IPF - Instituto Pereira Faustino",
+        "ITCP - Instituto Técnico-Científico de Perícia",
+        "ITEP - Instituto Técnico-Científico de Perícia",
+        "MAER - Ministério da Aeronáutica",
+        "MB - Marinha do Brasil",
+        "MD - Ministério da Defesa",
+        "MDS - Ministério da Cidadania",
+        "MEC - Ministério da Educação e Cultura",
+        "MEX - Ministério do Exército",
+        "MINDEF - Ministério da Defesa",
+        "MJ - Ministério da Justiça",
+        "MM - Ministério da Marinha",
+        "MMA - Ministério da Marinha",
+        "MPAS - Ministério da Previdência e Assistência Social",
+        "MPE - Ministério Público Estadual",
+        "MPF - Ministério Público Federal",
+        "MPT - Ministério Público do Trabalho",
+        "MRE - Ministério das Relações Exteriores",
+        "MT - Ministério do Trabalho",
+        "MTE - Ministério da Economia",
+        "MTPS - Ministério do Trabalho e Previdência Social",
+        "NUMIG - Núcleo de Polícia de Imigração",
+        "OAB - Ordem dos Advogados do Brasil",
+        "OMB - Ordens dos Músicos do Brasil",
+        "PC - Polícia Civil",
+        "PF - Polícia Federal",
+        "PGFN - Procuradoria Geral da Fazenda Nacional",
+        "PM - Polícia Militar",
+        "POLITEC - Perícia Oficial e Identificação Técnica",
+        "PRF - Polícia Rodoviária Federal",
+        "PTC - Polícia Tecnico-Científica",
+        "SCC - Secretaria de Estado da Casa Civil",
+        "SCJDS - Secretaria Coordenadora de Justiça e Defesa Social",
+        "SDS - Secretaria de Defesa Social",
+        "SECC - Secretaria de Estado da Casa Civil",
+        "SECCDE - Secretaria de Estado da Casa Civil e Desenvolvimento Econômico",
+        "SEDS - Secretaria de Estado da Defesa Social",
+        "SEGUP - Secretaria de Estado da Segurança Pública e da Defesa Social",
+        "SEJSP - Secretaria de Estado de Justiça e Segurança Pública",
+        "SEJUC - Secretaria de Estado da Justica",
+        "SEJUSP - Secretaria de Estado de Justiça e Segurança Pública",
+        "SEPC - Secretaria de Estado da Polícia Civil",
+        "SES - Secretaria de Estado da Segurança",
+        "SESC - Secretaria de Estado da Segurança e Cidadania",
+        "SESDC - Secretaria de Estado da Segurança, Defesa e Cidadania",
+        "SESDEC - Secretaria de Estado da Segurança, Defesa e Cidadania",
+        "SESEG - Secretaria Estadual de Segurança",
+        "SESP - Secretaria de Estado da Segurança Pública",
+        "SESPAP - Secretaria de Estado da Segurança Pública e Administração Penitenciária",
+        "SESPDC - Secretaria de Estado de Segurança Publica e Defesa do Cidadão",
+        "SESPDS - Secretaria de Estado de Segurança Pública e Defesa Social",
+        "SGPC - Superintendência Geral de Polícia Civil",
+        "SGPJ - Superintendência Geral de Polícia Judiciária",
+        "SIM - Serviço de Identificação da Marinha",
+        "SJ - Secretaria da Justiça",
+        "SJCDH - Secretaria da Justiça e dos Direitos Humanos",
+        "SJDS - Secretaria Coordenadora de Justiça e Defesa Social",
+        "SJS - Secretaria da Justiça e Segurança",
+        "SJTC - Secretaria da Justiça do Trabalho e Cidadania",
+        "SJTS - Secretaria da Justiça do Trabalho e Segurança",
+        "SNJ - Secretaria Nacional de Justiça / Departamento de Estrangeiros",
+        "SPMAF - Serviço de Polícia Marítima, Aérea e de Fronteiras",
+        "SPTC - Secretaria de Polícia Técnico-Científica",
+        "SRDPF - Superintendência Regional do Departamento de Polícia Federal",
+        "SRF - Receita Federal",
+        "SRTE - Superintendência Regional do Trabalho",
+        "SSDC - Secretaria da Segurança, Defesa e Cidadania",
+        "SSDS - Secretaria da Segurança e da Defesa Social",
+        "SSI - Secretaria de Segurança e Informações",
+        "SSP - Secretaria de Segurança Pública",
+        "SSPCGP - Secretaria de Segurança Pública e Coordenadoria Geral de Perícias",
+        "SSPDC - Secretaria de Segurança Pública e Defesa do Cidadão",
+        "SSPDS - Secretaria de Segurança Pública e Defesa Social",
+        "SSPPC - Secretaria de Segurança Pública Polícia Civil",
+        "SUSEP - Superintendência de Seguros Privados",
+        "SUSEPE - Superintendência dos Serviços Penitenciários",
+        "TJ - Tribunal de Justiça",
+        "TJAEM - Tribunal Arbitral e Mediação dos Estados Brasileiros",
+        "TRE - Tribunal Regional Eleitoral",
+        "TRF - Tribunal Regional Federal",
+        "TSE - Tribunal Superior Eleitoral",
+        "XXX - Orgão Estrangeiro",
+        "ZZZ - Outro"
+      ],
       "conditions": [
         {
           "expression": [],
@@ -2249,7 +2575,7 @@
       "id": 304,
       "required": false,
       "category": "documents",
-      "type": "text",
+      "type": "cpf",
       "topicIcons": "person",
       "residentLabel": "Número do CPF:",
       "diagonalLabel": "Número do CPF:",
@@ -2365,7 +2691,7 @@
       "id": 309,
       "required": false,
       "category": "documents",
-      "type": "text",
+      "type": "date",
       "topicIcons": "person",
       "residentLabel": "Data do casamento:",
       "diagonalLabel": "Data do casamento:",
@@ -2461,10 +2787,7 @@
       "diagonalLabel": "Residente possui outro imóvel:",
       "description": "Escolha uma das opções:",
       "slug": "possui-outro-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2498,10 +2821,7 @@
       "diagonalLabel": "Imóvel possui matrícula:",
       "description": "Escolha uma das opções:",
       "slug": "imovel-possui-matricula",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2575,10 +2895,7 @@
       "diagonalLabel": "Atendido por algum programa habitacional:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-situacao-habitacional",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -2594,14 +2911,11 @@
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
-      "residentLabel": "Sua renda familiar é inferior a 05 salários mínimos?",
+      "residentLabel": "Sua renda familiar é menor a 05 salários mínimos?",
       "diagonalLabel": "Renda inferior a 05 salários mínimos:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-renda-familiar",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -2621,10 +2935,7 @@
       "diagonalLabel": "Possui outro imóvel:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-outros-imoveis",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -2644,10 +2955,7 @@
       "diagonalLabel": "Existem outros proprietários:",
       "description": "Escolha uma das opções:",
       "slug": "outros-proprietarios",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2681,10 +2989,7 @@
       "diagonalLabel": "Existem outros moradores:",
       "description": "Escolha uma das opções:",
       "slug": "existem-outros-moradores",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2799,10 +3104,7 @@
       "diagonalLabel": "Gênero:",
       "description": "Escolha uma das opções",
       "slug": "genero-dependente",
-      "alternatives": [
-        "Masculino",
-        "Feminino"
-      ],
+      "alternatives": ["Masculino", "Feminino"],
       "conditions": [
         {
           "expression": [],
@@ -2816,7 +3118,7 @@
       "id": 404,
       "required": true,
       "category": "socioeconomic",
-      "type": "text",
+      "type": "date",
       "topicIcons": "family",
       "residentLabel": "Digite a data de nascimento:",
       "diagonalLabel": "Data de nascimento:",
@@ -2893,10 +3195,7 @@
       "diagonalLabel": "Possui deficiência:",
       "description": "Escolha uma das opções",
       "slug": "dependente-possui-deficiencia",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2938,7 +3237,7 @@
         "Física motora cadeirante",
         "Mental",
         "Síndrome de down",
-        "LER/DORF",
+        "LER/DORT",
         "Autismo",
         "Míltipla",
         "Outra"
@@ -2962,10 +3261,7 @@
       "diagonalLabel": "Dependente trabalha:",
       "description": "Escolha uma das opções",
       "slug": "dependente-trabalha-atualmente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -2999,10 +3295,7 @@
       "diagonalLabel": "Funcionário(a) público(a):",
       "description": "Escolha uma das opções",
       "slug": "dependente-funcionario-publico",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3036,10 +3329,7 @@
       "diagonalLabel": "Trabalha com carteira assinada:",
       "description": "Escolha uma das opções",
       "slug": "trabalha-carteira-assinada",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3073,10 +3363,7 @@
       "diagonalLabel": "Dependente é autônomo:",
       "description": "Escolha uma das opções",
       "slug": "dependente-autonomo",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3110,10 +3397,7 @@
       "diagonalLabel": "Dependente é empresário:",
       "description": "Escolha uma das opções",
       "slug": "dependente-empresario",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3193,10 +3477,7 @@
       "diagonalLabel": "Dependente é aposentado:",
       "description": "Escolha uma das opções",
       "slug": "dependente-aposentado",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3230,10 +3511,7 @@
       "diagonalLabel": "Dependente é doente ou inválido(a):",
       "description": "Escolha uma das opções",
       "slug": "dependente-invalido",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3267,10 +3545,7 @@
       "diagonalLabel": "Dependente está procurando emprego:",
       "description": "Escolha uma das opções",
       "slug": "dependente-procurando-emprego",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3304,10 +3579,7 @@
       "diagonalLabel": "Dependente é estudante:",
       "description": "Escolha uma das opções",
       "slug": "dependente-estudante",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3341,10 +3613,7 @@
       "diagonalLabel": "Dependente trabalha cuidando do lar:",
       "description": "Escolha uma das opções",
       "slug": "trabalha-cuidando-lar",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -3392,7 +3661,7 @@
       "id": 4191,
       "required": true,
       "category": "socioeconomic",
-      "type": "number",
+      "type": "money",
       "topicIcons": "money",
       "residentLabel": "Informe o valor de sua renda mensal:",
       "diagonalLabel": "Renda mensal do depentente:",
@@ -3418,10 +3687,7 @@
       "diagonalLabel": "Sabe ler ou escrever:",
       "description": "Escolha uma das opções",
       "slug": "sabe-ler-escrever",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3455,10 +3721,7 @@
       "diagonalLabel": "Tem curso superior completo:",
       "description": "Escolha uma das opções",
       "slug": "curso-superior-completo",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3492,10 +3755,7 @@
       "diagonalLabel": "Concluiu o Ensino Médio:",
       "description": "Escolha uma das opções",
       "slug": "concluiu-ensino-medio",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3529,10 +3789,7 @@
       "diagonalLabel": "Concluiu o Ensino Fundamental:",
       "description": "Escolha uma das opções",
       "slug": "concluiu-ensino-fundamental",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
@@ -3552,10 +3809,7 @@
       "diagonalLabel": "Está estudando atualmente:",
       "description": "Escolha uma das opções",
       "slug": "dependente-estudando-atualmente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
@@ -3614,13 +3868,11 @@
       "diagonalLabel": "Fim da pesquisa",
       "description": "Escolha uma das opções",
       "slug": "fim-da-pesquisa",
-      "alternatives": [
-        "Concluir"
-      ],
+      "alternatives": ["Concluir"],
       "conditions": [
         {
           "expression": [],
-          "next": ""
+          "next": "proprietario-imovel"
         }
       ]
     }
