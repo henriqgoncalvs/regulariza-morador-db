@@ -20,16 +20,14 @@
       "diagonalLabel": "Proprietário do imóvel:",
       "description": "Escolha uma das opções",
       "slug": "proprietario-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "proprietario-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-imovel"
@@ -38,18 +36,24 @@
           "expression": [
             {
               "slug": "proprietario-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "paga-aluguel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 2,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -57,16 +61,14 @@
       "diagonalLabel": "Morador do imóvel:",
       "description": "Escolha uma das opções",
       "slug": "morador-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "composicao-imovel"
@@ -75,18 +77,24 @@
           "expression": [
             {
               "slug": "morador-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
-          "next": "servico-imovel"
+          "next": "comprou-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 3,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -94,16 +102,14 @@
       "diagonalLabel": "Paga aluguel:",
       "description": "Escolha uma das opções",
       "slug": "paga-aluguel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "paga-aluguel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "valor-aluguel"
@@ -112,18 +118,24 @@
           "expression": [
             {
               "slug": "paga-aluguel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "emprestado-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 535,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "money",
       "topicIcons": "residence",
@@ -131,20 +143,24 @@
       "diagonalLabel": "Valor aluguel:",
       "description": "Escolha uma opção",
       "slug": "valor-aluguel",
-      "alternatives": [
-      ],
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "moradia-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 4,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -152,16 +168,14 @@
       "diagonalLabel": "Imóvel emprestado:",
       "description": "Escolha uma das opções",
       "slug": "emprestado-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "emprestado-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "moradia-imovel"
@@ -170,18 +184,24 @@
           "expression": [
             {
               "slug": "emprestado-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
-          "next": "comprou-imovel"
+          "next": "proprietario-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 5,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -189,16 +209,14 @@
       "diagonalLabel": "Imóvel é moradia:",
       "description": "Escolha uma das opções",
       "slug": "moradia-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "moradia-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "composicao-imovel"
@@ -207,18 +225,24 @@
           "expression": [
             {
               "slug": "moradia-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "servico-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 6,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -226,16 +250,14 @@
       "diagonalLabel": "Comércio/fábrica/serviço no imóvel:",
       "description": "Escolha uma das opções",
       "slug": "servico-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "servico-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "tipo-servico-imovel"
@@ -244,18 +266,24 @@
           "expression": [
             {
               "slug": "servico-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "cultura-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 7,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -273,13 +301,18 @@
           "expression": [],
           "next": "andar-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 8,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -287,16 +320,14 @@
       "diagonalLabel": "Imóvel herdado:",
       "description": "Escolha uma opção apenas",
       "slug": "herdou-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "herdou-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "unico-herdeiro"
@@ -305,18 +336,24 @@
           "expression": [
             {
               "slug": "herdou-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "doacao-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 9,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -335,50 +372,43 @@
           "expression": [],
           "next": "dono-negocio-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 10,
-      "required": false,
+      "required": true,
       "category": "residence",
-      "type": "radio",
+      "type": "number",
       "topicIcons": "residence",
-      "residentLabel": "Tem mais de um andar o imóvel?",
-      "diagonalLabel": "Imóvel com vários andares:",
+      "residentLabel": "Além do pavimento térreo quantos andares tem o imóvel?",
+      "diagonalLabel": "Imóvel com quantos andares:",
       "description": "Escolha uma opção",
       "slug": "andar-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": [],
       "conditions": [
         {
-          "expression": [
-            {
-              "slug": "andar-imovel",
-              "content": "Sim"
-            }
-          ],
-          "next": "quantidade-andares-imovel"
-        },
-        {
-          "expression": [
-            {
-              "slug": "andar-imovel",
-              "content": "Não"
-            }
-          ],
+          "expression": [],
           "next": "quantidade-comodos-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 11,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "number",
       "topicIcons": "residence",
@@ -392,17 +422,22 @@
           "expression": [],
           "next": "quantidade-comodos-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 12,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "number",
       "topicIcons": "residence",
-      "residentLabel": "Digite a quantidade de cômodos do imóvel. Conte apenas quantos quartos, salas, cozinha e banheiro tem na sua casa.",
+      "residentLabel": "Digite a quantidade de cômodos do imóvel. Conte apenas quantos quartos, sala, cozinha e banheiro tem na sua casa.",
       "diagonalLabel": "Quantidade cômodos imóvel:",
       "description": "Digite um número",
       "slug": "quantidade-comodos-imovel",
@@ -412,13 +447,18 @@
           "expression": [],
           "next": "moradia-e-comercio-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 13,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -426,16 +466,14 @@
       "diagonalLabel": "Imóvel como moradia e serviços",
       "description": "Escolha uma opção",
       "slug": "moradia-e-comercio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "moradia-e-comercio-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "tipo-servico-imovel"
@@ -444,18 +482,44 @@
           "expression": [
             {
               "slug": "moradia-e-comercio-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "nome-completo-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "moradia-e-comercio-imovel",
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "comprou-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 14,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -463,16 +527,14 @@
       "diagonalLabel": "Imóvel functiona igreja/algo cultural",
       "description": "Escolha uma opção",
       "slug": "cultura-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "cultura-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "responsavel-organizacao-imovel"
@@ -481,18 +543,24 @@
           "expression": [
             {
               "slug": "cultura-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "terreno-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 15,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -500,16 +568,14 @@
       "diagonalLabel": "É um terreno",
       "description": "Escolha uma opção",
       "slug": "terreno-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "terreno-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "terreno-vazio-imovel"
@@ -518,18 +584,24 @@
           "expression": [
             {
               "slug": "terreno-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "descricao-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 16,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -537,36 +609,40 @@
       "diagonalLabel": "Terreno vazio",
       "description": "Escolha uma opção",
       "slug": "terreno-vazio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "terreno-vazio-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "comprou-imovel"
+          "next": "outros-meios-comunicacao"
         },
         {
           "expression": [
             {
               "slug": "terreno-vazio-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "construindo-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 17,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "text",
       "topicIcons": "residence",
@@ -578,15 +654,20 @@
       "conditions": [
         {
           "expression": [],
-          "next": "composicao-imovel"
+          "next": "outros-meios-comunicacao"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 18,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -594,36 +675,40 @@
       "diagonalLabel": "Construindo no terreno",
       "description": "Digite sua resposta",
       "slug": "construindo-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "construindo-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "composicao-imovel"
+          "next": "outros-meios-comunicacao"
         },
         {
           "expression": [
             {
               "slug": "construindo-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "descricao-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 19,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -631,16 +716,14 @@
       "diagonalLabel": "Responsável organização",
       "description": "Escolha uma resposta",
       "slug": "responsavel-organizacao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "responsavel-organizacao-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "possui-cnpj-imovel"
@@ -649,18 +732,24 @@
           "expression": [
             {
               "slug": "responsavel-organizacao-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
-          "next": "comprou-imovel"
+          "next": "outros-meios-comunicacao"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
-      "id": 19,
-      "required": false,
+      "id": 1900,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -668,16 +757,55 @@
       "diagonalLabel": "Possui CPNJ organização",
       "description": "Escolha uma resposta",
       "slug": "possui-cnpj-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "possui-cnpj-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "cnpj-organizacao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "possui-cnpj-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 1900,
+      "required": true,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Possui CNPJ?",
+      "diagonalLabel": "Possui CPNJ Negócio",
+      "description": "Escolha uma resposta",
+      "slug": "possui-cnpj-dono-negocio",
+      "alternatives": ["Sim", "Não"],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "possui-cnpj-dono-negocio",
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "cnpj-imovel"
@@ -685,19 +813,65 @@
         {
           "expression": [
             {
-              "slug": "possui-cnpj-imovel",
-              "content": "Não"
+              "slug": "possui-cnpj-dono-negocio",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "nome-completo-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "possui-cnpj-dono-negocio",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "possui-cnpj-dono-negocio",
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "comprou-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 20,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "cnpj",
       "topicIcons": "residence",
@@ -708,16 +882,76 @@
       "alternatives": [],
       "conditions": [
         {
+          "expression": [
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "nome-completo-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
+        },
+        {
           "expression": [],
           "next": "comprou-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 20,
+      "required": true,
+      "category": "residence",
+      "type": "cnpj",
+      "topicIcons": "residence",
+      "residentLabel": "Digite o número do CNPJ",
+      "diagonalLabel": "CNPJ",
+      "description": "Digite o número do CNPJ",
+      "slug": "cnpj-organizacao",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "outros-meios-comunicacao"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 21,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -725,53 +959,80 @@
       "diagonalLabel": "Dono negócio imóvel:",
       "description": "Escolha uma opção",
       "slug": "dono-negocio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dono-negocio-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "possui-cnpj-imovel"
+          "next": "possui-cnpj-dono-negocio"
         },
         {
           "expression": [
             {
               "slug": "dono-negocio-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             },
             {
               "slug": "proprietario-imovel",
-              "content": "Sim"
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "nome-completo-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dono-negocio-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "moradia-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dono-negocio-imovel",
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "comprou-imovel"
-        },
-        {
-          "expression": [
-            {
-              "slug": "dono-negocio-imovel",
-              "content": "Não"
-            },
-            {
-              "slug": "proprietario-imovel",
-              "content": "Não"
-            }
-          ],
-          "next": "morador-nome"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 22,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -779,16 +1040,14 @@
       "diagonalLabel": "Comprou imóvel:",
       "description": "Escolha uma opção",
       "slug": "comprou-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "comprou-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "data-compra-imovel"
@@ -797,18 +1056,24 @@
           "expression": [
             {
               "slug": "comprou-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "herdou-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 23,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -816,16 +1081,14 @@
       "diagonalLabel": "Único herdeira(o):",
       "description": "Escolha uma opção",
       "slug": "unico-herdeiro",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "unico-herdeiro",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "ano-adquiriu-imovel"
@@ -834,18 +1097,24 @@
           "expression": [
             {
               "slug": "unico-herdeiro",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "numero-herdeiros"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 24,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -853,16 +1122,14 @@
       "diagonalLabel": "Doação imóvel:",
       "description": "Escolha uma opção",
       "slug": "doacao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "doacao-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "ano-adquiriu-imovel"
@@ -871,18 +1138,24 @@
           "expression": [
             {
               "slug": "doacao-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "autorizacao-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 25,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "number",
       "topicIcons": "residence",
@@ -896,13 +1169,18 @@
           "expression": [],
           "next": "ano-adquiriu-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 26,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "number",
       "topicIcons": "residence",
@@ -916,13 +1194,18 @@
           "expression": [],
           "next": "documento-prova-ano-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 27,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -930,16 +1213,14 @@
       "diagonalLabel": "Autorização uso do imóvel:",
       "description": "Escolha uma opção",
       "slug": "autorizacao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "autorizacao-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "ano-adquiriu-imovel"
@@ -948,18 +1229,24 @@
           "expression": [
             {
               "slug": "autorizacao-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "trocou-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 28,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -967,16 +1254,14 @@
       "diagonalLabel": "Trocou imóvel:",
       "description": "Escolha uma opção",
       "slug": "trocou-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "trocou-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "ano-adquiriu-imovel"
@@ -985,18 +1270,24 @@
           "expression": [
             {
               "slug": "trocou-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "posse-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 29,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -1004,16 +1295,14 @@
       "diagonalLabel": "Posse imóvel:",
       "description": "Escolha uma opção",
       "slug": "posse-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "posse-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "ano-adquiriu-imovel"
@@ -1022,18 +1311,24 @@
           "expression": [
             {
               "slug": "posse-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "usucapiao-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 30,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -1041,22 +1336,65 @@
       "diagonalLabel": "Usucapião imóvel:",
       "description": "Escolha uma opção",
       "slug": "usucapiao-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
+      "alternatives": ["Sim", "Não"],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "usucapiao-imovel",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "ano-adquiriu-imovel"
+        },
+        {
+          "expression": [
+            {
+              "slug": "usucapiao-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "como-adquiriu-imovel"
+        }
       ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 1068,
+      "required": true,
+      "category": "residence",
+      "type": "text",
+      "topicIcons": "residence",
+      "residentLabel": "Conta pra gente como você adquiriu o imóvel.",
+      "diagonalLabel": "Como adquiriu imóvel:",
+      "description": "Digite o texto",
+      "slug": "como-adquiriu-imovel",
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "ano-adquiriu-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 31,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "date",
       "topicIcons": "residence",
@@ -1070,30 +1408,33 @@
           "expression": [],
           "next": "foi-em-reais-compra"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 32,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
-      "residentLabel": "Na época que você comprou o imóvel, você pagou em reais(R$)?",
+      "residentLabel": "Na época que você comprou o imóvel, você pagou em reais (R$)?",
       "diagonalLabel": "Valor foi em reais:",
       "description": "Escolha uma opção",
       "slug": "foi-em-reais-compra",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "foi-em-reais-compra",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "valor-compra-imovel"
@@ -1102,18 +1443,24 @@
           "expression": [
             {
               "slug": "foi-em-reais-compra",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "moeda-compra-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 33,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "text",
       "topicIcons": "residence",
@@ -1125,15 +1472,20 @@
       "conditions": [
         {
           "expression": [],
-          "next": "valor-compra-imovel"
+          "next": "valor-compra-imovel-outra-moeda"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 34,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "money",
       "topicIcons": "residence",
@@ -1147,30 +1499,58 @@
           "expression": [],
           "next": "documento-prova-ano-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 3450,
+      "required": true,
+      "category": "residence",
+      "type": "number",
+      "topicIcons": "residence",
+      "residentLabel": "Digite o valor pago na compra do imóvel.",
+      "diagonalLabel": "Valor compra:",
+      "description": "Digite o valor",
+      "slug": "valor-compra-imovel-outra-moeda",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "documento-prova-ano-imovel"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 525,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
-      "residentLabel": "Você sabe qual o valor atual do seu imóvel?",
+      "residentLabel": "Você sabe quanto vale o seu imóvel atualmente?",
       "diagonalLabel": "Sabe quanto vale o imóvel:",
       "description": "Escolha uma opção",
       "slug": "sabe-valor-atual-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "sabe-valor-atual-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "valor-atual-imovel"
@@ -1179,19 +1559,24 @@
           "expression": [
             {
               "slug": "sabe-valor-atual-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
-          "next": "morador-nome"
+          "next": "intro-questionario-titular"
         }
-
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 35,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "money",
       "topicIcons": "residence",
@@ -1203,15 +1588,45 @@
       "conditions": [
         {
           "expression": [],
+          "next": "intro-questionario-titular"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 3555,
+      "required": true,
+      "category": "residence",
+      "type": "radio",
+      "topicIcons": "residence",
+      "residentLabel": "Agora vamos fazer algumas perguntas sobre você",
+      "diagonalLabel": "Introdução questionário titular:",
+      "description": "Vamos começar o questionário do titular do lote",
+      "slug": "intro-questionario-titular",
+      "alternatives": ["Ok"],
+      "conditions": [
+        {
+          "expression": [],
           "next": "morador-nome"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 36,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -1219,16 +1634,14 @@
       "diagonalLabel": "Tem documento prova:",
       "description": "Escolha uma opção",
       "slug": "documento-prova-ano-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "documento-prova-ano-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "tipos-documento-prova-ano-imovel"
@@ -1237,12 +1650,18 @@
           "expression": [
             {
               "slug": "documento-prova-ano-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "documento-prova-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1256,20 +1675,24 @@
       "diagonalLabel": "Documentos imóvel:",
       "description": "Anexo um ou mais documentos",
       "slug": "documento-prova-imovel",
-      "alternatives": [
-      ],
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "registrado-cartorio-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 38,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -1297,7 +1720,8 @@
           "expression": [
             {
               "slug": "tipos-documento-prova-ano-imovel",
-              "content": "Não tenho mais nenhum documento como prova"
+              "content": "Não tenho mais nenhum documento como prova",
+              "operator": "equal"
             }
           ],
           "next": "documento-prova-imovel"
@@ -1306,13 +1730,18 @@
           "expression": [],
           "next": "upload-documento-prova-ano-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 39,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "radio",
       "topicIcons": "residence",
@@ -1320,16 +1749,14 @@
       "diagonalLabel": "Imóvel Registrado Cartório:",
       "description": "Escolha uma opção",
       "slug": "registrado-cartorio-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "registrado-cartorio-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "numero-matricula-imovel"
@@ -1338,18 +1765,24 @@
           "expression": [
             {
               "slug": "registrado-cartorio-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "sabe-valor-atual-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": "https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/8907aaef798a189bf0727347f68b256f",
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 40,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "text",
       "topicIcons": "residence",
@@ -1362,13 +1795,18 @@
           "expression": [],
           "next": "sabe-valor-atual-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 41,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "file",
       "topicIcons": "residence",
@@ -1382,7 +1820,12 @@
           "expression": [],
           "next": "tipos-documento-prova-ano-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1392,7 +1835,7 @@
       "category": "socioeconomic",
       "type": "text",
       "topicIcons": "person",
-      "residentLabel": "Digite seu nome completo.",
+      "residentLabel": "Digite o seu nome completo.",
       "diagonalLabel": "Nome completo:",
       "description": "Responda abaixo",
       "slug": "morador-nome",
@@ -1402,7 +1845,12 @@
           "expression": [],
           "next": "endereco-imovel"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1422,7 +1870,12 @@
           "expression": [],
           "next": "morador-genero"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1436,17 +1889,18 @@
       "diagonalLabel": "Gênero:",
       "description": "Escolha uma das opções",
       "slug": "morador-genero",
-      "alternatives": [
-        "Masculino",
-        "Feminino",
-        "Não Binário"
-      ],
+      "alternatives": ["Masculino", "Feminino", "Não Binário"],
       "conditions": [
         {
           "expression": [],
           "next": "morador-nascimento"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1466,7 +1920,12 @@
           "expression": [],
           "next": "morador-pais"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1733,7 +2192,12 @@
           "expression": [],
           "next": "morador-estado"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "Brasil",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1781,7 +2245,12 @@
           "expression": [],
           "next": "morador-deficiencia"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1795,16 +2264,14 @@
       "diagonalLabel": "Possui deficiência:",
       "description": "Escolha uma das opções",
       "slug": "morador-deficiencia",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-deficiencia",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-tipo-deficiencia"
@@ -1813,12 +2280,18 @@
           "expression": [
             {
               "slug": "morador-deficiencia",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-trabalha"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1850,7 +2323,8 @@
           "expression": [
             {
               "slug": "morador-tipo-deficiencia",
-              "content": ["Outra"]
+              "content": ["Outra"],
+              "operator": "equal"
             }
           ],
           "next": "outro-tipo-deficiencia"
@@ -1859,13 +2333,18 @@
           "expression": [],
           "next": "morador-trabalha"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 575,
-      "required": false,
+      "required": true,
       "category": "family",
       "type": "text",
       "topicIcons": "residence",
@@ -1873,14 +2352,18 @@
       "diagonalLabel": "Outra Deficiência:",
       "description": "Escolha uma opção",
       "slug": "outro-tipo-deficiencia",
-      "alternatives": [
-      ],
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "morador-trabalha"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1894,16 +2377,14 @@
       "diagonalLabel": "Trabalha atualmente:",
       "description": "Escolha uma das opções",
       "slug": "morador-trabalha",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-trabalha",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-funcionario-publico"
@@ -1912,12 +2393,18 @@
           "expression": [
             {
               "slug": "morador-trabalha",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-aposentado-pensionista"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1931,16 +2418,14 @@
       "diagonalLabel": "Morador aposentado ou pensionista:",
       "description": "EScolha uma das opções",
       "slug": "morador-aposentado-pensionista",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-aposentado-pensionista",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-informou-renda"
@@ -1949,12 +2434,18 @@
           "expression": [
             {
               "slug": "morador-aposentado-pensionista",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "proprietario-doente-invalido"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -1968,30 +2459,34 @@
       "diagonalLabel": "Proprietário(a) doente ou inválido(a):",
       "description": "Escolha uma das opções",
       "slug": "proprietario-doente-invalido",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "proprietario-doente-invalido",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "morador-informou-renda"
+          "next": "profissao-faz-bico"
         },
         {
           "expression": [
             {
               "slug": "proprietario-doente-invalido",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-procurando-emprego"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2005,30 +2500,34 @@
       "diagonalLabel": "Morador procurando emprego:",
       "description": "Escolha uma das opções",
       "slug": "morador-procurando-emprego",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-procurando-emprego",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "morador-informou-renda"
+          "next": "profissao-faz-bico"
         },
         {
           "expression": [
             {
               "slug": "morador-procurando-emprego",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-estudante"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2042,30 +2541,34 @@
       "diagonalLabel": "Morador é estudante:",
       "description": "Escolha uma das opções",
       "slug": "morador-estudante",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-estudante",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "morador-informou-renda"
+          "next": "renda-extra"
         },
         {
           "expression": [
             {
               "slug": "morador-estudante",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-cuida-de-casa"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2079,30 +2582,34 @@
       "diagonalLabel": "Morador cuida do próprio lar",
       "description": "Escolha uma das opções",
       "slug": "morador-cuida-de-casa",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-cuida-de-casa",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "morador-informou-renda"
+          "next": "renda-extra"
         },
         {
           "expression": [
             {
               "slug": "morador-cuida-de-casa",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "faz-bico"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2116,16 +2623,18 @@
       "diagonalLabel": "Faz bico",
       "description": "Escolha uma das opções",
       "slug": "faz-bico",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
           "next": "profissao-faz-bico"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2139,14 +2648,38 @@
       "diagonalLabel": "Profissão",
       "description": "Digite",
       "slug": "profissao-faz-bico",
-      "alternatives": [
-      ],
+      "alternatives": [],
       "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "morador-procurando-emprego",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "renda-extra"
+        },
+        {
+          "expression": [
+            {
+              "slug": "proprietario-doente-invalido",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "renda-extra"
+        },
         {
           "expression": [],
           "next": "morador-informou-renda"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2160,16 +2693,14 @@
       "diagonalLabel": "Morador é funcionário público:",
       "description": "Escolha uma das opções",
       "slug": "morador-funcionario-publico",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-funcionario-publico",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-profissao"
@@ -2178,12 +2709,18 @@
           "expression": [
             {
               "slug": "morador-funcionario-publico",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-carteira-assinada"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2197,16 +2734,14 @@
       "diagonalLabel": "Morador trabalha com carteira assinada",
       "description": "Escolha uma das opções",
       "slug": "morador-carteira-assinada",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-carteira-assinada",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-profissao"
@@ -2215,12 +2750,18 @@
           "expression": [
             {
               "slug": "morador-carteira-assinada",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-autonomo"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2234,16 +2775,14 @@
       "diagonalLabel": "Morador trabalha de forma autônoma:",
       "description": "Escolha uma das opções",
       "slug": "morador-autonomo",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-autonomo",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-profissao"
@@ -2252,12 +2791,18 @@
           "expression": [
             {
               "slug": "morador-autonomo",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-empresario"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2271,16 +2816,18 @@
       "diagonalLabel": "Morador é empresário:",
       "description": "Escolha uma das opções",
       "slug": "morador-empresario",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
           "next": "morador-profissao"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2300,7 +2847,12 @@
           "expression": [],
           "next": "morador-local-trabalho"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2326,7 +2878,12 @@
           "expression": [],
           "next": "morador-informou-renda"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2340,18 +2897,14 @@
       "diagonalLabel": "Morador informou renda mensal:",
       "description": "Escolha uma das opções",
       "slug": "morador-informou-renda",
-      "alternatives": [
-        "Sim",
-        "Não",
-        "Não sei",
-        "Sem renda"
-      ],
+      "alternatives": ["Sim", "Não", "Não sei", "Sem renda"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-informou-renda",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-renda-mensal"
@@ -2360,7 +2913,12 @@
           "expression": [],
           "next": "morador-alfabetizado"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2380,7 +2938,12 @@
           "expression": [],
           "next": "renda-extra"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2400,7 +2963,8 @@
           "expression": [
             {
               "slug": "renda-extra",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "origem-renda-extra"
@@ -2409,12 +2973,18 @@
           "expression": [
             {
               "slug": "renda-extra",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-alfabetizado"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2439,9 +3009,39 @@
       "conditions": [
         {
           "expression": [],
+          "next": "valor-renda-extra"
+        }
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 7010,
+      "required": true,
+      "category": "socioeconomic",
+      "type": "money",
+      "topicIcons": "money",
+      "residentLabel": "Qual o valor desssa renda extra?",
+      "diagonalLabel": "Renda extra:",
+      "description": "Digite o valor",
+      "slug": "valor-renda-extra",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
           "next": "morador-alfabetizado"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2455,16 +3055,14 @@
       "diagonalLabel": "Morador sabe ler ou escrever:",
       "description": "Escolha uma das opções",
       "slug": "morador-alfabetizado",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-alfabetizado",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-graduado"
@@ -2473,12 +3071,18 @@
           "expression": [
             {
               "slug": "morador-alfabetizado",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-estuda-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2492,16 +3096,14 @@
       "diagonalLabel": "Morador concluiu curso superior:",
       "description": "Escolha uma das opções",
       "slug": "morador-graduado",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-graduado",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-estuda-atualmente"
@@ -2510,12 +3112,18 @@
           "expression": [
             {
               "slug": "morador-graduado",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-completou-ensino-medio"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2529,16 +3137,14 @@
       "diagonalLabel": "Morador concluiu o Ensino Médio:",
       "description": "Escolha uma das opções",
       "slug": "morador-completou-ensino-medio",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-completou-ensino-medio",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-estuda-atualmente"
@@ -2547,12 +3153,18 @@
           "expression": [
             {
               "slug": "morador-completou-ensino-medio",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "morador-concluiu-ensino-fundamental"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2566,16 +3178,18 @@
       "diagonalLabel": "Morador concluiu o Ensino Fundamental:",
       "description": "Escolha uma das opções",
       "slug": "morador-concluiu-ensino-fundamental",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
           "next": "morador-estuda-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2589,16 +3203,14 @@
       "diagonalLabel": "Morador estuda atualmente:",
       "description": "Escolha uma das opções",
       "slug": "morador-estuda-atualmente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "morador-estuda-atualmente",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "morador-local-instituicao-de-estudo"
@@ -2607,12 +3219,18 @@
           "expression": [
             {
               "slug": "morador-estuda-atualmente",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "resident-rg"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2637,13 +3255,18 @@
           "expression": [],
           "next": "resident-rg"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 300,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "number",
       "topicIcons": "person",
@@ -2657,13 +3280,18 @@
           "expression": [],
           "next": "orgao-emissor-rg"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 301,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "select",
       "topicIcons": "person",
@@ -2684,13 +3312,18 @@
           "expression": [],
           "next": "estado-emissor-rg"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": "https://viacarreira.com/wp-content/uploads/2020/10/orgao-emissor-rg-novo-1.jpg",
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 773,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "select",
       "topicIcons": "person",
@@ -2732,13 +3365,18 @@
           "expression": [],
           "next": "nome-mae-resident"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 302,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "text",
       "topicIcons": "person",
@@ -2752,13 +3390,18 @@
           "expression": [],
           "next": "nome-pai-resident"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 303,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "text",
       "topicIcons": "person",
@@ -2772,13 +3415,18 @@
           "expression": [],
           "next": "resident-cpf"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 304,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "cpf",
       "topicIcons": "person",
@@ -2792,7 +3440,12 @@
           "expression": [],
           "next": "foto-resident-rg-frente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2812,7 +3465,12 @@
           "expression": [],
           "next": "foto-resident-rg-verso"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2832,7 +3490,12 @@
           "expression": [],
           "next": "foto-resident-cpf"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2852,13 +3515,18 @@
           "expression": [],
           "next": "estado-civil-resident"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 308,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -2879,7 +3547,8 @@
           "expression": [
             {
               "slug": "estado-civil-resident",
-              "content": "Casado(a)"
+              "content": "Casado(a)",
+              "operator": "equal"
             }
           ],
           "next": "data-casamento"
@@ -2888,13 +3557,18 @@
           "expression": [],
           "next": "estado-real-resident"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 309,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "date",
       "topicIcons": "person",
@@ -2908,13 +3582,18 @@
           "expression": [],
           "next": "regime-casamento-resident"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 310,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -2932,13 +3611,18 @@
           "expression": [],
           "next": "estado-real-resident"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 311,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -2956,7 +3640,12 @@
           "expression": [],
           "next": "foto-estado-civil"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
@@ -2976,13 +3665,18 @@
           "expression": [],
           "next": "possui-outro-imovel"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 313,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -2990,16 +3684,14 @@
       "diagonalLabel": "Residente possui outro imóvel:",
       "description": "Escolha uma das opções:",
       "slug": "possui-outro-imovel",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "possui-outro-imovel",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "imovel-possui-matricula"
@@ -3008,18 +3700,24 @@
           "expression": [
             {
               "slug": "possui-outro-imovel",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "declaracao-situacao-habitacional"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 314,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -3027,16 +3725,14 @@
       "diagonalLabel": "Imóvel possui matrícula:",
       "description": "Escolha uma das opções:",
       "slug": "imovel-possui-matricula",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "imovel-possui-matricula",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "info-numero-matricula-imovel"
@@ -3045,18 +3741,24 @@
           "expression": [
             {
               "slug": "imovel-possui-matricula",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "declaracao-situacao-habitacional"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 315,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "text",
       "topicIcons": "person",
@@ -3070,13 +3772,18 @@
           "expression": [],
           "next": "cartorio-registro-imovel"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 316,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "text",
       "topicIcons": "person",
@@ -3090,13 +3797,18 @@
           "expression": [],
           "next": "declaracao-situacao-habitacional"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 317,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -3104,22 +3816,65 @@
       "diagonalLabel": "Atendido por algum programa habitacional:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-situacao-habitacional",
-      "alternatives": [
-        "Sim",
-        "Não"
+      "alternatives": ["Sim", "Não"],
+      "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "declaracao-situacao-habitacional",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "qual-programa-habitacional"
+        },
+        {
+          "expression": [
+            {
+              "slug": "declaracao-situacao-habitacional",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "declaracao-renda-familiar"
+        }
       ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 31752,
+      "required": true,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Qual o programa?",
+      "diagonalLabel": "Atendido por qual programa habitacional:",
+      "description": "Digite sua resposta:",
+      "slug": "qual-programa-habitacional",
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "declaracao-renda-familiar"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 318,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -3127,45 +3882,24 @@
       "diagonalLabel": "Renda inferior a 05 salários mínimos:",
       "description": "Escolha uma das opções:",
       "slug": "declaracao-renda-familiar",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
-      "conditions": [
-        {
-          "expression": [],
-          "next": "declaracao-outros-imoveis"
-        }
-      ]
-    },
-    {
-      "isFirst": false,
-      "isLast": false,
-      "id": 319,
-      "required": false,
-      "category": "documents",
-      "type": "radio",
-      "topicIcons": "person",
-      "residentLabel": "Você possui outro imóvel?",
-      "diagonalLabel": "Possui outro imóvel:",
-      "description": "Escolha uma das opções:",
-      "slug": "declaracao-outros-imoveis",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
           "next": "outros-proprietarios"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 320,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -3173,36 +3907,85 @@
       "diagonalLabel": "Existem outros proprietários:",
       "description": "Escolha uma das opções:",
       "slug": "outros-proprietarios",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "outros-proprietarios",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "morador-nome"
+          "next": "intro-outro-titular"
+        },
+        {
+          "expression": [
+            {
+              "slug": "proprietario-imovel",
+              "content": "Sim",
+              "operator": "equal"
+            },
+            {
+              "slug": "outros-proprietarios",
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "morador-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
         },
         {
           "expression": [
             {
               "slug": "outros-proprietarios",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "existem-outros-moradores"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 32025,
+      "required": true,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Agora vamos responder sobre o(a) outro(a) proprietário(a).",
+      "diagonalLabel": "Introdução outro proprietário:",
+      "description": "Pergunta informativa",
+      "slug": "intro-outro-titular",
+      "alternatives": ["Ok"],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "morador-nome"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 321,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "radio",
       "topicIcons": "person",
@@ -3210,58 +3993,117 @@
       "diagonalLabel": "Existem outros moradores:",
       "description": "Escolha uma das opções:",
       "slug": "existem-outros-moradores",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "existem-outros-moradores",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "nome-completo-dependente"
+          "next": "intro-outros-moradores"
         },
         {
           "expression": [
             {
               "slug": "existem-outros-moradores",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
-          "next": "esclarecimentos-finais"
+          "next": "outros-meios-comunicacao"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
+      "id": 321053,
+      "required": true,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Agora vamos responder sobre o(a) outro(a) morador(a).",
+      "diagonalLabel": "Informativo outros moradores:",
+      "description": "Informativo",
+      "slug": "intro-outros-moradores",
+      "alternatives": ["Ok"],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "nome-completo-dependente"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 7522323,
+      "required": true,
+      "category": "documents",
+      "type": "text",
+      "topicIcons": "person",
+      "residentLabel": "Insira qualquer outro meio de comunicação que você ache necessário (telefone, e-mail, celular...)",
+      "diagonalLabel": "Meios de comunicação:",
+      "description": "",
+      "slug": "outros-meios-comunicacao",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "outros-meios-comunicacao"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+
+    {
+      "isFirst": false,
+      "isLast": false,
       "id": 752,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "text",
       "topicIcons": "person",
       "residentLabel": "Espaço aberto para esclarecimentos que não puderam ser feitos no questionário",
       "diagonalLabel": "Esclarecimentos:",
       "description": "",
-      "slug": "esclarecimentos-finais",
-      "alternatives": [
-      ],
+      "slug": "outros-meios-comunicacao",
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "fim-da-pesquisa"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 400,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "text",
       "topicIcons": "family",
       "residentLabel": "Digite o nome completo:",
@@ -3274,14 +4116,19 @@
           "expression": [],
           "next": "posicao-familia"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 401,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Qual a posição deste morador na família?",
@@ -3306,7 +4153,8 @@
           "expression": [
             {
               "slug": "posicao-familia",
-              "content": "Outro"
+              "content": "Outro",
+              "operator": "equal"
             }
           ],
           "next": "posicao-familia-preenchida"
@@ -3315,14 +4163,19 @@
           "expression": [],
           "next": "genero-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 402,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "text",
       "topicIcons": "family",
       "residentLabel": "Preencha a posição que este morador ocupa em sua família:",
@@ -3335,38 +4188,44 @@
           "expression": [],
           "next": "genero-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 403,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Gênero:",
       "diagonalLabel": "Gênero:",
       "description": "Escolha uma das opções",
       "slug": "genero-dependente",
-      "alternatives": [
-        "Masculino",
-        "Feminino",
-        "Não Binário"
-      ],
+      "alternatives": ["Masculino", "Feminino", "Não Binário"],
       "conditions": [
         {
           "expression": [],
           "next": "data-nascimento-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 404,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "date",
       "topicIcons": "family",
       "residentLabel": "Digite a data de nascimento:",
@@ -3377,16 +4236,21 @@
       "conditions": [
         {
           "expression": [],
-          "next": "estado-civil-depentente"
+          "next": "dependente-possui-deficiencia"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 4040,
-      "required": false,
-      "category": "socioeconomic",
+      "required": true,
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "person",
       "residentLabel": "Estado civil:",
@@ -3406,14 +4270,19 @@
           "expression": [],
           "next": "estado-fato-depentente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 4041,
-      "required": false,
-      "category": "socioeconomic",
+      "required": true,
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "person",
       "residentLabel": "Estado de fato:",
@@ -3430,30 +4299,33 @@
           "expression": [],
           "next": "dependente-possui-deficiencia"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 405,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Possui alguma deficiência?",
       "diagonalLabel": "Possui deficiência:",
       "description": "Escolha uma das opções",
       "slug": "dependente-possui-deficiencia",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-possui-deficiencia",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "tipo-deficiencia-dependente"
@@ -3462,19 +4334,25 @@
           "expression": [
             {
               "slug": "dependente-possui-deficiencia",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-trabalha-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 406,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "checkbox",
       "topicIcons": "family",
       "residentLabel": "Informe o tipo:",
@@ -3499,7 +4377,8 @@
           "expression": [
             {
               "slug": "tipo-deficiencia-dependente",
-              "content": "Outra"
+              "content": ["Outra"],
+              "operator": "equal"
             }
           ],
           "next": "outro-tipo-deficiencia-dependente"
@@ -3508,51 +4387,58 @@
           "expression": [],
           "next": "dependente-trabalha-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 545,
-      "required": false,
-      "category": "family",
+      "required": true,
+      "category": "dependent",
       "type": "text",
-      "topicIcons": "residence",
+      "topicIcons": "family",
       "residentLabel": "Escreva qual a sua deficiência",
       "diagonalLabel": "Outra Deficiência:",
       "description": "Escolha uma opção",
       "slug": "outro-tipo-deficiencia-dependente",
-      "alternatives": [
-      ],
+      "alternatives": [],
       "conditions": [
         {
           "expression": [],
           "next": "dependente-trabalha-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 407,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Trabalha atualmente?",
       "diagonalLabel": "Dependente trabalha:",
       "description": "Escolha uma das opções",
       "slug": "dependente-trabalha-atualmente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-trabalha-atualmente",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "dependente-funcionario-publico"
@@ -3561,35 +4447,39 @@
           "expression": [
             {
               "slug": "dependente-trabalha-atualmente",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-aposentado"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 408,
       "required": true,
-      "category ": "socioeconomic",
+      "category ": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É funcionário(a) público(a)?",
       "diagonalLabel": "Funcionário(a) público(a):",
       "description": "Escolha uma das opções",
       "slug": "dependente-funcionario-publico",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-funcionario-publico",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "profissao-dependente"
@@ -3598,35 +4488,39 @@
           "expression": [
             {
               "slug": "dependente-funcionario-publico",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "trabalha-carteira-assinada"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 409,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Trabalha com carteira assinada?",
       "diagonalLabel": "Trabalha com carteira assinada:",
       "description": "Escolha uma das opções",
       "slug": "trabalha-carteira-assinada",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "trabalha-carteira-assinada",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "profissao-dependente"
@@ -3635,35 +4529,39 @@
           "expression": [
             {
               "slug": "trabalha-carteira-assinada",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-autonomo"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 410,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É autônomo(a)?",
       "diagonalLabel": "Dependente é autônomo:",
       "description": "Escolha uma das opções",
       "slug": "dependente-autonomo",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-autonomo",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "profissao-dependente"
@@ -3672,35 +4570,39 @@
           "expression": [
             {
               "slug": "dependente-autonomo",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-empresario"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 411,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É empresário(a)?",
       "diagonalLabel": "Dependente é empresário:",
       "description": "Escolha uma das opções",
       "slug": "dependente-empresario",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-empresario",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "profissao-dependente"
@@ -3709,19 +4611,25 @@
           "expression": [
             {
               "slug": "dependente-empresario",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "sabe-ler-escrever"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 412,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "text",
       "topicIcons": "family",
       "residentLabel": "Qual a profissão?",
@@ -3734,14 +4642,19 @@
           "expression": [],
           "next": "local-trabalho-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 413,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Qual o local de trabalho?",
@@ -3760,30 +4673,33 @@
           "expression": [],
           "next": "valor-renda-mensal"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 414,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É aposentado ou pensionista?",
       "diagonalLabel": "Dependente é aposentado:",
       "description": "Escolha uma das opções",
       "slug": "dependente-aposentado",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-aposentado",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "valor-renda-mensal"
@@ -3792,229 +4708,273 @@
           "expression": [
             {
               "slug": "dependente-aposentado",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-invalido"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 415,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É doente ou inválido(a)?",
       "diagonalLabel": "Dependente é doente ou inválido(a):",
       "description": "Escolha uma das opções",
       "slug": "dependente-invalido",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-invalido",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "valor-renda-mensal"
+          "next": "profissao-faz-bico-dependente"
         },
         {
           "expression": [
             {
               "slug": "dependente-invalido",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-procurando-emprego"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 416,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Está procurando emprego?",
       "diagonalLabel": "Dependente está procurando emprego:",
       "description": "Escolha uma das opções",
       "slug": "dependente-procurando-emprego",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-procurando-emprego",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "valor-renda-mensal"
+          "next": "profissao-faz-bico-dependente"
         },
         {
           "expression": [
             {
               "slug": "dependente-procurando-emprego",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-estudante"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 417,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É estudante?",
       "diagonalLabel": "Dependente é estudante:",
       "description": "Escolha uma das opções",
       "slug": "dependente-estudante",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-estudante",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "valor-renda-mensal"
+          "next": "renda-extra-dependente"
         },
         {
           "expression": [
             {
               "slug": "dependente-estudante",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "trabalha-cuidando-lar"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 418,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Você Trabalha cuidando do lar?",
       "diagonalLabel": "Dependente trabalha cuidando do lar:",
       "description": "Escolha uma das opções",
       "slug": "trabalha-cuidando-lar",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "trabalha-cuidando-lar",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
-          "next": "valor-renda-mensal"
+          "next": "renda-extra-dependente"
         },
         {
           "expression": [
             {
               "slug": "trabalha-cuidando-lar",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "faz-bico-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 603,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Faz bico?",
       "diagonalLabel": "Faz bico",
       "description": "Escolha uma das opções",
       "slug": "faz-bico-dependente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
           "next": "profissao-faz-bico-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 604,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "text",
       "topicIcons": "family",
       "residentLabel": "Qual a sua profissão?",
       "diagonalLabel": "Profissão",
       "description": "Digite",
       "slug": "profissao-faz-bico-dependente",
-      "alternatives": [
-      ],
+      "alternatives": [],
       "conditions": [
+        {
+          "expression": [
+            {
+              "slug": "dependente-invalido",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "renda-extra-dependente"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-procurando-emprego",
+              "content": "Sim",
+              "operator": "equal"
+            }
+          ],
+          "next": "renda-extra-dependente"
+        },
         {
           "expression": [],
           "next": "valor-renda-mensal"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 419,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "money",
       "residentLabel": "Gostaria de informar o valor de sua renda mensal?",
       "diagonalLabel": "Valor da renda mensal:",
       "description": "Escolha uma das opções",
       "slug": "valor-renda-mensal",
-      "alternatives": [
-        "Sim",
-        "Não",
-        "Não sei",
-        "Sem renda"
-      ],
+      "alternatives": ["Sim", "Não", "Não sei", "Sem renda"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "valor-renda-mensal",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "dependente-renda-mensal"
@@ -4023,14 +4983,19 @@
           "expression": [],
           "next": "sabe-ler-escrever"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 4191,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "money",
       "topicIcons": "money",
       "residentLabel": "Informe o valor de sua renda mensal:",
@@ -4043,14 +5008,19 @@
           "expression": [],
           "next": "renda-extra-dependente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 703,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "money",
       "residentLabel": "Tem renda extra?",
@@ -4063,7 +5033,8 @@
           "expression": [
             {
               "slug": "renda-extra-dependente",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "origem-renda-extra-dependente"
@@ -4072,19 +5043,25 @@
           "expression": [
             {
               "slug": "renda-extra-dependente",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "sabe-ler-escrever"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 704,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "checkbox",
       "topicIcons": "money",
       "residentLabel": "De onde vem a renda extra?",
@@ -4102,32 +5079,60 @@
       "conditions": [
         {
           "expression": [],
+          "next": "valor-renda-extra-dependente"
+        }
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
+    },
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 783,
+      "required": true,
+      "category": "dependent",
+      "type": "money",
+      "topicIcons": "money",
+      "residentLabel": "Qual o valor dessa renda extra?",
+      "diagonalLabel": "Renda extra do morador:",
+      "description": "Digite o valor da renda extra",
+      "slug": "valor-renda-extra-dependente",
+      "alternatives": [],
+      "conditions": [
+        {
+          "expression": [],
           "next": "sabe-ler-escrever"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 420,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Sabe ler ou escrever?",
       "diagonalLabel": "Sabe ler ou escrever:",
       "description": "Escolha uma das opções",
       "slug": "sabe-ler-escrever",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "sabe-ler-escrever",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "curso-superior-completo"
@@ -4136,35 +5141,39 @@
           "expression": [
             {
               "slug": "sabe-ler-escrever",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "dependente-estudando-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 421,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Tem curso superior completo?",
       "diagonalLabel": "Tem curso superior completo:",
       "description": "Escolha uma das opções",
       "slug": "curso-superior-completo",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "curso-superior-completo",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "dependente-estudando-atualmente"
@@ -4173,35 +5182,39 @@
           "expression": [
             {
               "slug": "curso-superior-completo",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "concluiu-ensino-medio"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 422,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Concluiu o Ensino Médio?",
       "diagonalLabel": "Concluiu o Ensino Médio:",
       "description": "Escolha uma das opções",
       "slug": "concluiu-ensino-medio",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "concluiu-ensino-medio",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "dependente-estudando-atualmente"
@@ -4210,58 +5223,64 @@
           "expression": [
             {
               "slug": "concluiu-ensino-medio",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "concluiu-ensino-fundamental"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 423,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Concluiu o Ensino Fundamental?",
       "diagonalLabel": "Concluiu o Ensino Fundamental:",
       "description": "Escolha uma das opções",
       "slug": "concluiu-ensino-fundamental",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [],
           "next": "dependente-estudando-atualmente"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 424,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Está estudando atualmente?",
       "diagonalLabel": "Está estudando atualmente:",
       "description": "Escolha uma das opções",
       "slug": "dependente-estudando-atualmente",
-      "alternatives": [
-        "Sim",
-        "Não"
-      ],
+      "alternatives": ["Sim", "Não"],
       "conditions": [
         {
           "expression": [
             {
               "slug": "dependente-estudando-atualmente",
-              "content": "Sim"
+              "content": "Sim",
+              "operator": "equal"
             }
           ],
           "next": "local-estabelecimento-ensino"
@@ -4270,19 +5289,40 @@
           "expression": [
             {
               "slug": "dependente-estudando-atualmente",
-              "content": "Não"
+              "content": "Não",
+              "operator": "equal"
+            },
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
+        },
+        {
+          "expression": [
+            {
+              "slug": "dependente-estudando-atualmente",
+              "content": "Não",
+              "operator": "equal"
             }
           ],
           "next": "existem-outros-moradores"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 425,
       "required": true,
-      "category": "socioeconomic",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Onde fica o estabelecimento de ensino?",
@@ -4297,32 +5337,50 @@
       ],
       "conditions": [
         {
+          "expression": [
+            {
+              "slug": "proprietario-imovel",
+              "content": "Não",
+              "operator": "equal"
+            }
+          ],
+          "next": "outros-meios-comunicacao"
+        },
+        {
           "expression": [],
           "next": "existem-outros-moradores"
         }
-      ]
+      ],
+      "isLoop": true,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     },
     {
       "isFirst": false,
       "isLast": true,
       "id": 500,
       "required": true,
-      "category": "documents",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "Concluir questionário?",
       "diagonalLabel": "Fim da pesquisa",
       "description": "Escolha uma das opções",
       "slug": "fim-da-pesquisa",
-      "alternatives": [
-        "Concluir"
-      ],
+      "alternatives": ["Concluir"],
       "conditions": [
         {
           "expression": [],
           "next": "proprietario-imovel"
         }
-      ]
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut"
     }
   ]
 }
