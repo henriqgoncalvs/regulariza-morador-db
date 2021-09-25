@@ -47,7 +47,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -88,7 +89,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -129,7 +131,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -154,7 +157,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -195,7 +199,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -236,7 +241,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -277,7 +283,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -306,7 +313,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -347,7 +355,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -377,7 +386,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -402,7 +412,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -427,7 +438,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -452,7 +464,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -513,7 +526,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -554,7 +568,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -595,7 +610,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -636,7 +652,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -661,7 +678,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -702,7 +720,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -743,7 +762,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -784,7 +804,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -865,7 +886,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -920,7 +942,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -945,7 +968,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1026,7 +1050,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1067,7 +1092,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1108,7 +1134,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1149,7 +1176,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1174,7 +1202,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1199,7 +1228,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1240,7 +1270,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1281,7 +1312,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1322,7 +1354,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1363,7 +1396,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1388,7 +1422,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1398,9 +1433,9 @@
       "category": "residence",
       "type": "date",
       "topicIcons": "residence",
-      "residentLabel": "Digite a data da compra",
+      "residentLabel": "Clique no calendário abaixo ou digite a data e ano de sua compra",
       "diagonalLabel": "Data compra imóvel:",
-      "description": "Digite a data da compra",
+      "description": "Clique no calendário abaixo ou digite a data e ano de sua compra",
       "slug": "data-compra-imovel",
       "alternatives": [],
       "conditions": [
@@ -1413,7 +1448,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1454,7 +1490,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1479,7 +1516,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1504,7 +1542,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1529,7 +1568,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1570,7 +1610,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1595,7 +1636,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1620,7 +1662,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1661,17 +1704,18 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 37,
-      "required": false,
+      "required": true,
       "category": "residence",
       "type": "file",
       "topicIcons": "residence",
-      "residentLabel": "Anexe ou fotografe os seguintes documentos: \n - comprovante de residência mais antigo (anterior a 2016, se possuir).\n - comprovante de residência atual/IPTU, se possuir",
+      "residentLabel": "Anexe ou fotografe os seguintes documentos: \n - comprovante de residência mais antigo (anterior a 2016, se possuir).\n - comprovante de residência atual. \n - IPTU, se possuir",
       "diagonalLabel": "Documentos imóvel:",
       "description": "Anexo um ou mais documentos",
       "slug": "documento-prova-imovel",
@@ -1686,7 +1730,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": true
     },
     {
       "isFirst": false,
@@ -1735,7 +1780,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1776,7 +1822,8 @@
       "showOnDash": false,
       "auxiliarImage": "https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/8907aaef798a189bf0727347f68b256f",
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1800,7 +1847,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1825,7 +1873,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1850,7 +1899,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1875,7 +1925,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1900,7 +1951,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -1910,7 +1962,7 @@
       "category": "socioeconomic",
       "type": "date",
       "topicIcons": "person",
-      "residentLabel": "Digite sua data de nascimento.",
+      "residentLabel": "Clique no calendário abaixo ou digite sua data e ano de nascimento.",
       "diagonalLabel": "Data de nascimento:",
       "description": "Responda abaixo",
       "slug": "morador-nascimento",
@@ -1925,7 +1977,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2197,7 +2250,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "Brasil",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2250,7 +2304,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2291,7 +2346,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2338,7 +2394,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2363,7 +2420,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2404,7 +2462,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2445,7 +2504,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2486,7 +2546,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2527,7 +2588,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2568,7 +2630,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2609,7 +2672,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2634,7 +2698,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2679,7 +2744,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2720,7 +2786,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2761,7 +2828,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2802,7 +2870,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2827,7 +2896,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2852,7 +2922,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2883,7 +2954,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2918,7 +2990,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2943,7 +3016,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -2984,7 +3058,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3016,7 +3091,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3041,7 +3117,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3082,7 +3159,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3123,7 +3201,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3164,7 +3243,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3189,7 +3269,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3230,7 +3311,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3260,7 +3342,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3285,7 +3368,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3317,7 +3401,8 @@
       "showOnDash": false,
       "auxiliarImage": "https://viacarreira.com/wp-content/uploads/2020/10/orgao-emissor-rg-novo-1.jpg",
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3370,7 +3455,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3395,7 +3481,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3420,7 +3507,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3445,13 +3533,14 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 305,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "file",
       "topicIcons": "file",
@@ -3470,13 +3559,14 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": true
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 306,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "file",
       "topicIcons": "file",
@@ -3495,13 +3585,14 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": true
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 307,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "file",
       "topicIcons": "file",
@@ -3520,7 +3611,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": true
     },
     {
       "isFirst": false,
@@ -3562,7 +3654,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3572,9 +3665,9 @@
       "category": "documents",
       "type": "date",
       "topicIcons": "person",
-      "residentLabel": "Data do casamento:",
+      "residentLabel": "Clique no calendário abaixo ou digite a data e ano do casamento:",
       "diagonalLabel": "Data do casamento:",
-      "description": "Digite a data do casamento",
+      "description": "Clique no calendário abaixo ou digite a data e ano do casamento",
       "slug": "data-casamento",
       "alternatives": [],
       "conditions": [
@@ -3587,7 +3680,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3616,7 +3710,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3645,13 +3740,14 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 312,
-      "required": false,
+      "required": true,
       "category": "documents",
       "type": "file",
       "topicIcons": "file",
@@ -3670,7 +3766,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": true
     },
     {
       "isFirst": false,
@@ -3711,7 +3808,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3752,7 +3850,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3777,7 +3876,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3802,7 +3902,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3843,7 +3944,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3868,7 +3970,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3893,7 +3996,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3954,7 +4058,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -3979,7 +4084,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4020,7 +4126,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4045,7 +4152,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4063,16 +4171,42 @@
       "conditions": [
         {
           "expression": [],
-          "next": "outros-meios-comunicacao"
+          "next": "esclarecimentos-finais"
         }
       ],
       "isLoop": false,
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
-
+    {
+      "isFirst": false,
+      "isLast": false,
+      "id": 7529786,
+      "required": true,
+      "category": "documents",
+      "type": "radio",
+      "topicIcons": "person",
+      "residentLabel": "Eu, {{{morador-nome}}} de CPF: {{{resident-cpf}}}, declaro que a minha afirmação em relação a pergunta 'Sua renda familiar é menor que 05 salários mínimos?' é {{{declaracao-renda-familiar}}}, e ela é uma afirmação verdadeira. Tenho conhecimento que quaisquer inverdades ditas nesse questionário serão passivas da punição da lei.",
+      "diagonalLabel": "Declarações:",
+      "description": "",
+      "slug": "declaracoes-assinatura",
+      "alternatives": ["Sim, concordo"],
+      "conditions": [
+        {
+          "expression": [],
+          "next": "fim-da-pesquisa"
+        }
+      ],
+      "isLoop": false,
+      "showOnDash": false,
+      "auxiliarImage": null,
+      "defaultValue": "",
+      "graphType": "donut",
+      "canJump": false
+    },
     {
       "isFirst": false,
       "isLast": false,
@@ -4084,19 +4218,20 @@
       "residentLabel": "Espaço aberto para esclarecimentos que não puderam ser feitos no questionário",
       "diagonalLabel": "Esclarecimentos:",
       "description": "",
-      "slug": "outros-meios-comunicacao",
+      "slug": "esclarecimentos-finais",
       "alternatives": [],
       "conditions": [
         {
           "expression": [],
-          "next": "fim-da-pesquisa"
+          "next": "declaracoes-assinatura"
         }
       ],
       "isLoop": false,
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4121,7 +4256,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4168,7 +4304,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4193,7 +4330,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4218,7 +4356,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4228,7 +4367,7 @@
       "category": "dependent",
       "type": "date",
       "topicIcons": "family",
-      "residentLabel": "Digite a data de nascimento:",
+      "residentLabel": "Clique no calendário abaixo ou digite a data e ano de nascimento:",
       "diagonalLabel": "Data de nascimento:",
       "description": "",
       "slug": "data-nascimento-dependente",
@@ -4243,7 +4382,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4275,7 +4415,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4304,7 +4445,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4345,7 +4487,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4392,7 +4535,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4417,7 +4561,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4458,14 +4603,15 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
       "isLast": false,
       "id": 408,
       "required": true,
-      "category ": "dependent",
+      "category": "dependent",
       "type": "radio",
       "topicIcons": "family",
       "residentLabel": "É funcionário(a) público(a)?",
@@ -4499,7 +4645,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4540,7 +4687,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4581,7 +4729,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4622,7 +4771,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4647,7 +4797,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4678,7 +4829,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4719,7 +4871,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4760,7 +4913,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4801,7 +4955,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4842,7 +4997,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4883,7 +5039,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4908,7 +5065,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4953,7 +5111,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -4988,7 +5147,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5013,7 +5173,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5054,7 +5215,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5086,7 +5248,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5111,7 +5274,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5152,7 +5316,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5193,7 +5358,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5234,7 +5400,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5259,7 +5426,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5315,7 +5483,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5355,7 +5524,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     },
     {
       "isFirst": false,
@@ -5380,7 +5550,8 @@
       "showOnDash": false,
       "auxiliarImage": null,
       "defaultValue": "",
-      "graphType": "donut"
+      "graphType": "donut",
+      "canJump": false
     }
   ]
 }
