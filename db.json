@@ -4222,6 +4222,16 @@
       "alternatives": [],
       "conditions": [
         {
+          "expression": [
+            {
+              "content": "Não",
+              "slug": "proprietario-imovel",
+              "operator": "equal"
+            }
+          ],
+          "next": "fim-da-pesquisa"
+        },
+        {
           "expression": [],
           "next": "declaracoes-assinatura"
         }
